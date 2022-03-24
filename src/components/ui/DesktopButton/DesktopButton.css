@@ -1,0 +1,10 @@
+.desktop-button{
+    width: 200px;
+    height: 40px;
+    background: #4C6FFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+}

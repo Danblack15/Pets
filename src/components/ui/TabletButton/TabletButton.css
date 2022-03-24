@@ -1,0 +1,10 @@
+.tablet-button{
+    width: 210px;
+    height: 40px;
+    background: #4C6FFF;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
