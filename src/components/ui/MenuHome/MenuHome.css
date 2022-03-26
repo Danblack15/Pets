@@ -8,7 +8,7 @@
 .wrapper-menu-icon img{
     width: 24px;
 }
-.active{
+.wrapper-menu-icon-active{
     background: #4C6FFF;
     border-radius: 13px;
 }

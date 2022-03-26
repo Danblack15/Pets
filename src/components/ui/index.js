@@ -1,13 +1,17 @@
-import DesktopButton from '@/components/ui/DesktopButton/DesktopButton'
-import LaptopButton from '@/components/ui/LaptopButton/LaptopButton'
-import TabletButton from '@/components/ui/TabletButton/TabletButton'
-import MobileButton from '@/components/ui/MobileButton/MobileButton'
+import ButtonUI from '@/components/ui/ButtonUI/ButtonUI'
 import MenuHome from '@/components/ui/MenuHome/MenuHome'
+import ThemeUI from '@/components/ui/ThemeUI/ThemeUI'
+import CategoryUI from '@/components/ui/CategoryUI/CategoryUI'
+import NotificationUI from '@/components/ui/NotificationUI/NotificationUI'
+import LogoUI from '@/components/ui/LogoUI/LogoUI'
+import AvatarUI from '@/components/ui/AvatarUI/AvatarUI'
 
 export default [
-    DesktopButton,
-    LaptopButton,
-    TabletButton,
-    MobileButton,
-    MenuHome
+    ButtonUI,
+    MenuHome,
+    ThemeUI,
+    CategoryUI,
+    NotificationUI,
+    LogoUI,
+    AvatarUI
 ]

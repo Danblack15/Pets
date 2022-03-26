@@ -1,0 +1,59 @@
+.theme{
+    width: 110px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+}
+.theme label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 50%;
+    height: 32px;
+    border-radius: 16.2963px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.theme input{
+    display: none;
+}
+.theme__white{
+    right: 5px;
+}
+.theme-laptop{
+    width: 95px;
+    height: 46px;
+}
+.theme-laptop .theme__white{
+    width: 40%;
+}
+.theme-tablet{
+    width: 110px;
+    height: 46px;
+}
+.theme-mobile{
+    width: 77px;
+    height: 32px;
+}
+.theme-mobile label{
+    height: 22px;
+}
+.theme-mobile .theme__white{
+    width: 40%;
+}
+.theme-mobile img{
+    width: 12px;
+}
+/*FOR WHITE THEME*/
+.theme-white{
+    background: #FFFFFF;
+}
+.active{
+    background: #4C6FFF;
+}

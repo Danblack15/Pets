@@ -1,12 +1,23 @@
 <template>
-  <div class="wrapper-menu-icon">
+  <div class="wrapper-menu-icon wrapper-menu-icon-active" v-if="active">
+      <slot></slot>
+  </div>
+
+  <div class="wrapper-menu-icon" v-else>
       <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'MenuHome'
+    name: 'MenuHome',
+
+    props: {
+      active: {
+        type: Boolean,
+        default: false
+      }
+    }
 }
 </script>
 

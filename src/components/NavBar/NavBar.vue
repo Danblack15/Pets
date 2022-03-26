@@ -21,14 +21,35 @@
           :class="{ active: selectedTab == 'tab-3' }"
           @click="setSelectedTab"
         >
-          Табы
+          Элементы переключения темы
         </li>
         <li
           id="tab-4"
           :class="{ active: selectedTab == 'tab-4' }"
           @click="setSelectedTab"
         >
-          Состовляющие формы
+          Категории животных
+        </li>
+        <li
+          id="tab-5"
+          :class="{ active: selectedTab == 'tab-5' }"
+          @click="setSelectedTab"
+        >
+          Блок Уведомлений
+        </li>
+        <li
+          id="tab-6"
+          :class="{ active: selectedTab == 'tab-6' }"
+          @click="setSelectedTab"
+        >
+          Логотип
+        </li>
+        <li
+          id="tab-7"
+          :class="{ active: selectedTab == 'tab-7' }"
+          @click="setSelectedTab"
+        >
+          Аватар
         </li>
       </ul>
     </section>
@@ -42,11 +63,23 @@
       </TabsItem>
 
       <TabsItem name="tab-3" :class="{ show: selectedTab == 'tab-3' }">
-        <p>Табы</p>
+        <Themes />
       </TabsItem>
 
       <TabsItem name="tab-4" :class="{ show: selectedTab == 'tab-4' }">
-        <p>Состовляющие формы</p>
+        <CategoryPets />
+      </TabsItem>
+
+      <TabsItem name="tab-5" :class="{ show: selectedTab == 'tab-5' }">
+        <NotificationsBlock />
+      </TabsItem>
+
+      <TabsItem name="tab-6" :class="{ show: selectedTab == 'tab-6' }">
+        <LogoBlock />
+      </TabsItem>
+
+      <TabsItem name="tab-7" :class="{ show: selectedTab == 'tab-7' }">
+        <AvatarBlock />
       </TabsItem>
     </section>
   </section>
@@ -56,12 +89,22 @@
 import TabsItem from "@/components/TabsItem/TabsItem";
 import ButtonsBlock from "@/components/ButtonsBlock/ButtonsBlock";
 import LeftMenuIcons from "@/components/LeftMenuIcons/LeftMenuIcons";
+import Themes from "@/components/Themes/Themes";
+import CategoryPets from "@/components/CategoryPets/CategoryPets";
+import NotificationsBlock from "@/components/NotificationsBlock/NotificationsBlock";
+import LogoBlock from "@/components/LogoBlock/LogoBlock";
+import AvatarBlock from "@/components/AvatarBlock/AvatarBlock";
 
 export default {
   components: {
     TabsItem,
     ButtonsBlock,
-	LeftMenuIcons
+    LeftMenuIcons,
+    Themes,
+    CategoryPets,
+    NotificationsBlock,
+    LogoBlock,
+    AvatarBlock
   },
 
   data() {

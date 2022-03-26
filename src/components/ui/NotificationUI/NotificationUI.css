@@ -1,0 +1,42 @@
+.notification-button{
+    width: 46px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.notification-button img{
+    transition: 0.2s;
+}
+.notification-button-circle{
+    width: 8px;
+    height: 8px;
+    background: #F16063;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 2px;
+}
+.wrapperWhite{
+    background: #FFFFFF;
+}
+.mobileWrapper{
+    width: 32px;
+    height: 32px;
+}
+.mobileWrapper img{
+    width: 9px;
+}
+.mobileWrapper .notification-button-circle{
+    top: 2px;
+    width: 6px;
+    height: 6px;
+}
+.notification-button:hover img{
+    transform: scale(1.3);
+    transition: 0.2s;
+}

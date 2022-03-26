@@ -1,4 +1,4 @@
-.buttons-item{
+.avatar-item{
     min-width: 350px;
     padding: 0 15px;
     height: 300px;
@@ -10,10 +10,10 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.buttons-item-name{
+.avatar-item-name{
     font-size: 20px;
 }
-.buttons-item-tag{
+.avatar-item-tag{
     width: 90%;
     font-size: 15px;
     border: 1px solid rgb(115, 141, 224);
