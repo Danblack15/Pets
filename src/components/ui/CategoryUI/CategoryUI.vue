@@ -1,20 +1,12 @@
 <template>
-  <div 
-    class="pet-category" 
-    :class="{
-      whiteWrapper: white, 
-      laptopWrapper: laptop, 
-      tabletWrapper: tablet,
-      mobileWrapper: mobile
-    }"
-  >
+  <div class="pet-category" :class="{whiteCategory: white}" @click="activated">
       <div class="pet-category__wrapper">
           <img src="@/assets/img/categoryCat.svg" alt="pet">
-          <div class="pet-category__tranformer" :class="{isActive: active}"></div>
+          <div class="pet-category__tranformer" :class="{isActive: activeCategory}"></div>
       </div>
       <h3 
         class="pet-category-name" 
-        :class="{whiteName: white, activeName: active, laptopName: laptop}"
+        :class="{activeName: activeCategory}"
       >Коты</h3>
   </div>
 </template>
@@ -32,18 +24,18 @@ export default {
         type: Boolean,
         default: false
       },
-      laptop: {
-        type: Boolean,
-        default: false
-      },
-      tablet: {
-        type: Boolean,
-        default: false
-      },
-      mobile: {
-        type: Boolean,
-        default: false
+    },
+
+    data() {
+      return {
+        activeCategory: this.active
       }
+    },
+
+    methods: {
+      activated() {
+        this.activeCategory = !this.activeCategory
+      } 
     }
 }
 </script>

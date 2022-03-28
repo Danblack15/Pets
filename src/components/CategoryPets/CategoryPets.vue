@@ -1,7 +1,7 @@
 <template>
   <div class="category-item">
-    <p class="category-item-name">Desktop категория</p>
-    <CategoryUI />
+    <p class="category-item-name">Категория</p>
+    <CategoryUI/>
     <input
       type="text"
       class="category-item-tag"
@@ -11,18 +11,7 @@
   </div>
 
   <div class="category-item">
-    <p class="category-item-name">Desktop active категория</p>
-    <CategoryUI active/>
-    <input
-      type="text"
-      class="category-item-tag"
-      value="<CategoryUI active></CategoryUI>"
-      disabled
-    />
-  </div>
-
-	<div class="category-item">
-    <p class="category-item-name">Desktop white категория</p>
+    <p class="category-item-name">Категория белая</p>
     <CategoryUI white/>
     <input
       type="text"
@@ -32,35 +21,13 @@
     />
   </div>
 
-	<div class="category-item">
-    <p class="category-item-name">Laptop категория</p>
-    <CategoryUI laptop/>
+  <div class="category-item">
+    <p class="category-item-name">Категория активная</p>
+    <CategoryUI active/>
     <input
       type="text"
       class="category-item-tag"
-      value="<CategoryUI laptop></CategoryUI>"
-      disabled
-    />
-  </div>
-
-	<div class="category-item">
-    <p class="category-item-name">Tablet категория</p>
-    <CategoryUI tablet/>
-    <input
-      type="text"
-      class="category-item-tag"
-      value="<CategoryUI tablet></CategoryUI>"
-      disabled
-    />
-  </div>
-
-	<div class="category-item">
-    <p class="category-item-name">Mobile категория</p>
-    <CategoryUI mobile/>
-    <input
-      type="text"
-      class="category-item-tag"
-      value="<CategoryUI mobile></CategoryUI>"
+      value="<CategoryUI active></CategoryUI>"
       disabled
     />
   </div>

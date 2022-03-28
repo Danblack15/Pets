@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     overflow: hidden;
     cursor: pointer;
+    color: #EDF2F7;
 }
 .pet-category__wrapper{
     width: 42px;
@@ -26,7 +27,6 @@
 .pet-category-name{
     font-weight: 600;
     font-size: 10px;
-    color: #EDF2F7;
     font-family: 'Rubik', sans-serif;
     z-index: 1;
 }
@@ -39,27 +39,9 @@
     z-index: 0;
     transition: 0.4s ease;
 }
-.laptopWrapper{
-    width: 95px;
-    height: 91px;
-}
-.laptopName{
-    font-size: 12px;
-}
-.tabletWrapper{
-    width: 95px;
-    height: 91px;
-}
-.mobileWrapper{
-    width: 95px;
-    height: 91px;
-}
-.whiteWrapper{
+.whiteCategory{
     background: #FFFFFF;
-}
-.whiteName{
     color: #0F172A;
-    font-size: 12px;
 }
 .isActive{
     transform: scale(10);
