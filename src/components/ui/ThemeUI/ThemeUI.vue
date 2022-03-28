@@ -1,100 +1,12 @@
 <template>
-  <!-- <div class="theme theme-white" v-if="white">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
+  <div class="theme" id="theme">
+    <label for="blackTheme" class="theme__black active" @click.stop>
+      <input type="radio" name="theme" id="blackTheme" @click="theme"/>
+      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" @click.stop/>
     </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
-    </label>
-  </div> -->
-
-  <div class="theme theme-laptop theme-white" v-if="laptop && white">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-  <div class="theme theme-laptop" v-else-if="laptop & black">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moon.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sun.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-  <div class="theme theme-tablet theme-white" v-else-if="tablet && white">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-	<div class="theme theme-tablet" v-else-if="tablet && black">
-    <label for="blackTheme" class="theme__black active">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moon.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sun.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-  <div class="theme theme-mobile theme-white" v-else-if="mobile && white">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-	<div class="theme theme-mobile" v-else-if="mobile && black">
-    <label for="blackTheme" class="theme__black active">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moon.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sun.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-  <div class="theme theme-white" v-else-if="white">
-    <label for="blackTheme" class="theme__black">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white active">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
-    </label>
-  </div>
-
-  <div class="theme" v-else>
-    <label for="blackTheme" class="theme__black active">
-      <input type="radio" name="theme" id="blackTheme" />
-      <img src="@/assets/img/moon.svg" alt="blackTheme" />
-    </label>
-    <label for="whiteTheme" class="theme__white">
-      <input type="radio" name="theme" id="whiteTheme" />
-      <img src="@/assets/img/sun.svg" alt="whiteTheme" />
+    <label for="whiteTheme" class="theme__white" @click.stop>
+      <input type="radio" name="theme" id="whiteTheme" @click="theme"/>
+      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" @click.stop/>
     </label>
   </div>
 </template>
@@ -103,28 +15,25 @@
 export default {
   name: "ThemeUI",
 
-  props: {
-    white: {
-      type: Boolean,
-      default: false,
-    },
-    laptop: {
-      type: Boolean,
-      default: false,
-    },
-		tablet: {
-			type: Boolean,
-      default: false,
-		},
-		mobile: {
-			type: Boolean,
-      default: false,
-		},
-    black: {
-      type: Boolean,
-      default: true
+  methods: {
+    theme(e) {
+      let elem = e.target.parentNode
+      
+      document.getElementsByClassName('theme__black')[0].classList.remove('active')
+      document.getElementsByClassName('theme__white')[0].classList.remove('active')
+      
+      elem.classList.add('active')
+
+      let theme = elem.getAttribute('for')
+
+      //Вместо изменения классов будет обращение к VUEX для изменения темы
+      if (theme == 'whiteTheme') {
+        document.getElementById('theme').classList.add('whiteTheme')
+      } else {
+        document.getElementById('theme').classList.remove('whiteTheme')
+      }
     }
-  },
+  }
 };
 </script>
 

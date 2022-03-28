@@ -6,6 +6,7 @@
     padding: 5px;
     display: flex;
     position: relative;
+    transition: 0.5s;
 }
 .theme label{
     position: absolute;
@@ -19,6 +20,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.2s;
 }
 .theme input{
     display: none;
@@ -26,33 +28,13 @@
 .theme__white{
     right: 5px;
 }
-.theme-laptop{
-    width: 95px;
-    height: 46px;
-}
-.theme-laptop .theme__white{
-    width: 40%;
-}
-.theme-tablet{
-    width: 110px;
-    height: 46px;
-}
-.theme-mobile{
-    width: 77px;
-    height: 32px;
-}
-.theme-mobile label{
-    height: 22px;
-}
-.theme-mobile .theme__white{
-    width: 40%;
-}
-.theme-mobile img{
-    width: 12px;
-}
-/*FOR WHITE THEME*/
-.theme-white{
+.whiteTheme{
     background: #FFFFFF;
+    transition: 0.5s;
+}
+.theme label:hover{
+    background: #4C6FFF;
+    transition: 0.2s;
 }
 .active{
     background: #4C6FFF;
