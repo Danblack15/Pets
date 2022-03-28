@@ -1,86 +1,4 @@
 .button{
-    width: 200px;
-    height: 40px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.button-laptop{
-    width: 150px;
-    height: 40px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-tablet{
-    width: 210px;
-    height: 40px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-mobile{
-    width: 265px;
-    height: 40px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-card-desktop{
-    width: 410px;
-    height: 56px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-card-laptop{
-    width: 443px;
-    height: 48px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-card-wide{
-    width: 100%;
-    height: 48px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-card-mobile{
-    width: 100%;
-    height: 40px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
-}
-.button-auth-desktop{
     width: 325px;
     height: 48px;
     background: #4C6FFF;
@@ -89,16 +7,27 @@
     font-size: 18px;
     color: #EDF2F7;
     font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
 }
-.button-auth-mobile{
+.smallButton{
+    width: 200px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.largeButton{
+    width: 410px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.wideButton{
     width: 100%;
-    height: 48px;
-    background: #4C6FFF;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #EDF2F7;
-    font-family: 'Rubik', sans-serif;
+}
+.disabledButton{
+    background: #334155;
+    pointer-events: none;
 }
 .button:hover{
     opacity: 0.7;
