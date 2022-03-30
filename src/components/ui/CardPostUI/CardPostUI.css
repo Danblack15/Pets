@@ -1,0 +1,44 @@
+.card-post{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    width: 410px;
+    height: 210px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;    
+}
+.card-post__info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-post__info__person{
+    display: flex;
+}
+.card-post__info__person-text{
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card-post-name{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.card-post-status{
+    color: #96A7AF;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-post__info__date p{
+    color: #96A7AF;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-post__text{
+    margin-top: 15px;
+    width: 100%;
+}
