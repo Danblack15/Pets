@@ -1,0 +1,26 @@
+.welcome-back{
+    width: 860px;
+    height: 314px;
+    background-image: url('@/assets/img/welcomeBack.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+.welcome-back__text{
+    margin-left: 30px;
+}
+.welcome-back__text h2{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.welcome-back__text h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+.welcome-back__text h3:nth-child(3){
+    margin-top: 10px;
+}
