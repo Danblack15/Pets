@@ -1,11 +1,11 @@
 <template>
   <div class="theme" id="theme">
-    <label for="blackTheme" class="theme__black active" @click.stop>
-      <input type="radio" name="theme" id="blackTheme" @click="theme"/>
+    <label for="blackTheme" class="theme__label theme__black active" @click.stop>
+      <input class="theme-input" type="radio" name="theme" id="blackTheme" @click="theme"/>
       <img src="@/assets/img/moonWhite.svg" alt="blackTheme" @click.stop/>
     </label>
-    <label for="whiteTheme" class="theme__white" @click.stop>
-      <input type="radio" name="theme" id="whiteTheme" @click="theme"/>
+    <label for="whiteTheme" class="theme__label theme__white" @click.stop>
+      <input class="theme-input" type="radio" name="theme" id="whiteTheme" @click="theme"/>
       <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" @click.stop/>
     </label>
   </div>

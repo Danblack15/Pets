@@ -8,7 +8,7 @@
     position: relative;
     transition: 0.5s;
 }
-.theme label{
+.theme__label{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -22,7 +22,7 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.theme input{
+.theme-input{
     display: none;
 }
 .theme__white{
