@@ -20,28 +20,6 @@
         disabled
     />
   </div>
-
-  <div class="notification">
-    <p class="notification-name">Уведомления white</p>
-    <NotificationUI white/>
-    <input 
-        type="text" 
-        class="notification-tag"
-        value="<NotificationUI white></NotificationUI>"
-        disabled
-    />
-  </div>
-
-  <div class="notification">
-    <p class="notification-name">Уведомления mobile</p>
-    <NotificationUI mobile/>
-    <input 
-        type="text" 
-        class="notification-tag"
-        value="<NotificationUI mobile></NotificationUI>"
-        disabled
-    />
-  </div>
 </template>
 
 <script>

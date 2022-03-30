@@ -1,8 +1,8 @@
 <template>
-  <button class="notification-button" :class="{wrapperWhite: white, mobileWrapper: mobile}">
+  <button class="notification-button">
       <div class="notification-button-circle" v-if="active"></div>
-      <img src="@/assets/img/notification.svg" alt="notification" v-if="!white">
-      <img src="@/assets/img/notificationWhite.svg" alt="notification" v-if="white">
+      <img src="@/assets/img/notification.svg" alt="notification">
+      <!-- <img src="@/assets/img/notificationWhite.svg" alt="notification"> -->
   </button>
 </template>
 
@@ -15,14 +15,6 @@ export default {
             type: Boolean,
             default: false
         },
-        white: {
-            type: Boolean,
-            default: false
-        },
-        mobile: {
-            type: Boolean,
-            default: false
-        }
     }
 }
 </script>
