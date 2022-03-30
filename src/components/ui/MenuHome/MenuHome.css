@@ -4,11 +4,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 13px;
+    cursor: pointer;
 }
 .wrapper-menu-icon img{
     width: 24px;
 }
-.wrapper-menu-icon-active{
+.activeIcon{
     background: #4C6FFF;
     border-radius: 13px;
+}
+.menuItem{
+    transition: 0.2s;
+}
+.menuItem:hover {
+    background: #4C6FFF;
+    transition: 0.2s;
 }

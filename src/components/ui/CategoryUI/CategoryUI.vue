@@ -1,5 +1,5 @@
 <template>
-  <div class="pet-category" :class="{whiteCategory: white}" @click="activated">
+  <div class="pet-category" @click="activated">
       <div class="pet-category__wrapper">
           <img src="@/assets/img/categoryCat.svg" alt="pet">
           <div class="pet-category__tranformer" :class="{isActive: activeCategory}"></div>
@@ -16,10 +16,6 @@ export default {
 
     props: {
       active: {
-        type: Boolean,
-        default: false
-      },
-      white: {
         type: Boolean,
         default: false
       },

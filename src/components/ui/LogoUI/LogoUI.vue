@@ -1,40 +1,22 @@
 <template>
     <img 
-        src="@/assets/img/logoMediumWhite.svg" 
-        alt="logo" 
-        v-if="medium && white"
-    />
-
-    <img 
         src="@/assets/img/logoMediumDark.svg" 
         alt="logo" 
-        v-else-if="medium"
-    />
-
-    <img 
-        src="@/assets/img/logoBigWhite.svg" 
-        alt="logo" 
-        v-else-if="big && white"
+        v-if="medium"
     />
 
     <img 
         src="@/assets/img/logoMediumDark.svg" 
         alt="logo" 
         class="big-logo"
-        v-else-if="big"
+        v-else-if="large"
     />
 
     <img 
-        src="@/assets/img/logoWhite.svg" 
+        src="@/assets/img/logo.svg" 
         alt="logo" 
-        v-else-if="white"
+        v-else
     />
-
-  <img 
-    src="@/assets/img/logo.svg" 
-    alt="logo" 
-    v-else
-  />
 </template>
 
 <script>
@@ -42,7 +24,7 @@ export default {
     name: "LogoUI",
 
     props: {
-        big: {
+        large: {
             type: Boolean,
             default: false
         },
@@ -53,10 +35,6 @@ export default {
         little: {
             type: Boolean,
             default: true
-        },
-        white: {
-            type: Boolean,
-            default: false
         },
     }
 }

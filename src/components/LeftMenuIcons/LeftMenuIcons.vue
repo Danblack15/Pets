@@ -1,8 +1,34 @@
 <template>
   <div class="left-menu-item">
     <p class="left-menu-item-name">Элемент меню</p>
-    <MenuHome>
+    <MenuHome menuItem>
         <img src="@/assets/img/homeicon.svg" alt="home">
+    </MenuHome>
+    <input 
+        type="text" 
+        class="left-menu-item-tag"
+        value="<MenuHome menuItem></MenuHome>"
+        disabled
+    />
+  </div>
+
+  <div class="left-menu-item">
+    <p class="left-menu-item-name">Активный элемент меню</p>
+    <MenuHome active menuItem>
+        <img src="@/assets/img/homeicon.svg" alt="home">
+    </MenuHome>
+    <input 
+        type="text" 
+        class="left-menu-item-tag"
+        value="<MenuHome active menuItem></MenuHome>"
+        disabled
+    />
+  </div>
+
+  <div class="left-menu-item">
+    <p class="left-menu-item-name">LogOut</p>
+    <MenuHome menuItem>
+        <img src="@/assets/img/logout.svg" alt="logout">
     </MenuHome>
     <input 
         type="text" 
@@ -10,20 +36,7 @@
         value="<MenuHome></MenuHome>"
         disabled
     />
-  </div>
-
-  <div class="left-menu-item">
-    <p class="left-menu-item-name">Активный элемент меню</p>
-    <MenuHome active>
-        <img src="@/assets/img/homeicon.svg" alt="home">
-    </MenuHome>
-    <input 
-        type="text" 
-        class="left-menu-item-tag"
-        value="<MenuHome class='active'></MenuHome>"
-        disabled
-    />
-  </div>
+  </div>  
 
   <div class="left-menu-item">
     <p class="left-menu-item-name">Tablet открыть меню</p>
