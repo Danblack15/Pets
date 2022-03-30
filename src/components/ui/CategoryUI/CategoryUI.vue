@@ -5,8 +5,7 @@
           <div class="pet-category__tranformer" :class="{isActive: activeCategory}"></div>
       </div>
       <h3 
-        class="pet-category-name" 
-        :class="{activeName: activeCategory}"
+        :class="['pet-category-name', {activeName: activeCategory}]"
       >Коты</h3>
   </div>
 </template>
