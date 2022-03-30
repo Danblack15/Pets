@@ -1,6 +1,5 @@
 .button{
-    width: 325px;
-    height: 48px;
+    padding: 13.5px 135px;
     background: #4C6FFF;
     border-radius: 10px;
     font-weight: 500;
@@ -10,22 +9,20 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.smallButton{
-    width: 200px;
-    height: 40px;
+.button--small{
+    padding: 11.5px 44.5px;
     font-weight: 700;
     font-size: 14px;
 }
-.largeButton{
-    width: 410px;
-    height: 56px;
+.button--large{
+    padding: 14px 104px;
     font-weight: 700;
     font-size: 24px;
 }
-.wideButton{
+.button--wide{
     width: 100%;
 }
-.disabledButton{
+.button--disabled{
     background: #334155;
     pointer-events: none;
 }

@@ -33,10 +33,10 @@ export default {
     computed: {
       classObject() {
         return {
-          smallButton: this.small,
-          largeButton: this.large,
-          wideButton: this.wide,
-          disabledButton: this.disabled
+          'button--small': this.small,
+          'button--large': this.large,
+          'button--wide': this.wide,
+          'button--disabled': this.disabled
         }
       }
     }
