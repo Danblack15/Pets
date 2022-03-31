@@ -1,0 +1,42 @@
+.write-now{
+    width: 260px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.write-now__friends{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.write-now__avatar{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 35px;
+}
+.write-now__add{
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #FFFFFF;
+    border-radius: 32.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.write-now__add:hover{
+    filter: brightness(50%);
+    transition: 0.2s;
+}
+.write-now-button{
+    font-weight: 700;
+    font-size: 14px;
+}
