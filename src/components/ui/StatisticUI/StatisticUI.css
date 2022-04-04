@@ -1,0 +1,108 @@
+.statistic{
+    width: 560px;
+    height: 290px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.statistic__person{
+    width: 180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.statistic__data{
+    width: 253px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.statistic__person__avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    background-color: pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.statistic__person__avatar:hover .statistic__person__select{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+.statistic__person__select{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: inherit;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.statistic__person__select__arrow{
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0 10px;
+}
+.statistic__person__select__arrow:hover{
+    background: none;
+    box-shadow: 0px 0px 0px 0px black;
+}
+.statistic__person__name{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.statistic__person__name h3{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.statistic__person__name h4{
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.statistic__data__name{
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.statistic__data__name p{
+    display: flex;
+    align-items: center;
+}
+.statistic__data__name p:nth-child(2){
+    margin-left: 20px;
+}
+.statistic__data__likes-circle{
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #F16063;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.statistic__data__view-circle{
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #66CB9F;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.statistic__data__chart{
+    display: flex;
+    justify-content: space-between;
+    height: 197px;
+}
