@@ -25,7 +25,7 @@ export default {
     return {
       data: {
         likes: 3,
-        views: 10
+        views: 5
       },
     }
   },
@@ -33,14 +33,14 @@ export default {
   computed: {
     likesLine() {
       let total = this.data.likes + this.data.views,
-          height = this.data.likes * 100 / total
+          height = this.data.likes * 100 / (total + 2)
 
       return height
     },
 
     viewsLine() {
       let total = this.data.likes + this.data.views,
-          height = this.data.views * 100 / total
+          height = this.data.views * 100 / (total + 2)
 
       return height
     }
