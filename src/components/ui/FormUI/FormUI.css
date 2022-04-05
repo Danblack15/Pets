@@ -63,10 +63,10 @@ fieldset{
     border-bottom: 1px solid #F16063;
 }
 
-.form--success .form-input, .form--success .form-label{
+.form-item--success .form-input, .form-item--success .form-label{
     color: #66CB9F;
 }
-.form--success .form-input{
+.form-item--success .form-input{
     border-bottom: 1px solid #66CB9F;
 }
 
@@ -78,8 +78,16 @@ fieldset{
     font-weight: 400;
     font-size: 8px;
     color: #F16063;
-    display: none;
+    
 }
 .form--error .form-hint{
     display: block;
+}
+
+.form-item--error .form-input{
+    color: #F16063;
+    border-bottom: 1px solid #F16063;
+}
+.form-item--error .form-label{
+    color: #F16063;
 }
