@@ -13,27 +13,27 @@
     justify-content: space-between;
     width: 100%;
 }
-.card-post__info__person{
+.card-post__person{
     display: flex;
 }
-.card-post__info__person-text{
+.card-post__person__text{
     margin-left: 17px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.card-post-name{
+.card-post__name{
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
 }
-.card-post-status{
+.card-post__status{
     color: #96A7AF;
     font-weight: 400;
     font-size: 14px;
 }
-.card-post__info__date p{
+.card-post__date{
     color: #96A7AF;
     font-weight: 400;
     font-size: 14px;

@@ -1,15 +1,15 @@
 <template>
   <section class="card-post">
       <div class="card-post__info">
-          <div class="card-post__info__person">
+          <div class="card-post__person">
               <AvatarUI post/>
 
-              <div class="card-post__info__person-text">
-                <h3 class="card-post-name">Ynfan</h3>
-                <h4 class="card-post-status">Пельмень с мясом.</h4>
+              <div class="card-post__person__text">
+                <h3 class="card-post__name">Ynfan</h3>
+                <h4 class="card-post__status">Пельмень с мясом.</h4>
               </div>
           </div>
-          <div class="card-post__info__date">
+          <div class="card-post__date">
               <p>17:20</p>
           </div>
       </div>
