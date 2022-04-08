@@ -21,6 +21,7 @@
 }
 .button--wide{
     width: 100%;
+    padding: 13.5px 0;
 }
 .button--disabled{
     background: #334155;

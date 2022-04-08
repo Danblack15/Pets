@@ -1,7 +1,7 @@
 <template>
   <div class="buttons-item">
     <p class="buttons-item-name">Кнопка обычная</p>
-    <ButtonUI>Напиши сейчас</ButtonUI>
+    <ButtonUI>Войти</ButtonUI>
     <input 
         type="text" 
         class="buttons-item-tag"
@@ -12,7 +12,7 @@
 
   <div class="buttons-item">
     <p class="buttons-item-name">Кнопка маленькая</p>
-    <ButtonUI small>Купить - 5000</ButtonUI>
+    <ButtonUI small>Напиши сейчас</ButtonUI>
     <input 
         type="text" 
         class="buttons-item-tag"
@@ -23,7 +23,7 @@
 
   <div class="buttons-item">
     <p class="buttons-item-name">Кнопка большая</p>
-    <ButtonUI large>Купить - 5000</ButtonUI>
+    <ButtonUI large>Купить - 5 000 ₽</ButtonUI>
     <input 
         type="text" 
         class="buttons-item-tag"

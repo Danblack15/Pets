@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 ul, li{
     list-style: none;
 }
 input, button{
     border: none;
+    font-family: 'Rubik', sans-serif;
 }
 input, button, textarea{
     border: none;
