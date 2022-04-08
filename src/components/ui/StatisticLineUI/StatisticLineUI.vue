@@ -6,7 +6,7 @@
     </div>
     <div class="chart-item__date">
       <p>{{day}}</p>
-      <p><slot></slot></p>
+      <p>{{ weekDay[0].value }}</p>
     </div>
   </div>
 </template>
@@ -16,6 +16,9 @@ export default {
   name: "StatisticLineUI",
 
   props: {
+    item: {
+      type: Object
+    },
     day: {
       type: Number
     }
@@ -23,26 +26,56 @@ export default {
 
   data() {
     return {
-      data: {
-        likes: 3,
-        views: 5
-      },
+      week: [
+        {
+          id: 1,
+          value: 'ПН'
+        },
+        {
+          id: 2,
+          value: 'ВТ'
+        },
+        {
+          id: 3,
+          value: 'СР'
+        },
+        {
+          id: 4,
+          value: 'ЧТ'
+        },
+        {
+          id: 5,
+          value: 'ПТ'
+        },
+        {
+          id: 6,
+          value: 'СБ'
+        },
+        {
+          id: 7,
+          value: 'ВС'
+        },
+      ] 
     }
   },
 
   computed: {
     likesLine() {
-      let total = this.data.likes + this.data.views,
-          height = this.data.likes * 100 / (total + 2)
+      let total = this.item.likes + this.item.views,
+          height = this.item.likes * 100 / (total + 2)
 
       return height
     },
 
     viewsLine() {
-      let total = this.data.likes + this.data.views,
-          height = this.data.views * 100 / (total + 2)
+      let total = this.item.likes + this.item.views,
+          height = this.item.views * 100 / (total + 2)
 
       return height
+    },
+
+    weekDay() {
+      return this.week.filter((p) => p.id == this.item.id)
     }
   }
 };

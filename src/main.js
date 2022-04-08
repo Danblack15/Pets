@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from '@/App'
 
 import components from '@/components/ui/index'
+import store from '@/store'
 
 import '@/assets/styles/main.css'
 
@@ -12,4 +13,6 @@ components.forEach(component => {
 })
 
 
-app.mount('#app')
+app
+    .use(store)
+    .mount('#app')

@@ -1,15 +1,15 @@
 <template>
-  <section class="statistic">
+  <section class="statistic" v-if="data.length">
       <div class="statistic__person">
-          <div class="statistic__person__avatar" :style="{'background-image': `url(${img})`}">
+          <div class="statistic__person__avatar" :style="{'background-image': `url(${data[0].img})`}">
               <div class="statistic__person__select">
                   <span><ArrowUI left class="statistic__person__select__arrow"/></span>
                   <span><ArrowUI class="statistic__person__select__arrow"/></span>
               </div>
           </div>
           <div class="statistic__person__name">
-              <h3>Jhony</h3>
-              <h4>3 лайка</h4>
+              <h3>{{ data[0].name }}</h3>
+              <h4>{{ data[0].likes }} лайка</h4>
           </div>
       </div>
       <div class="statistic__data">
@@ -18,19 +18,20 @@
               <p>Просмотры <span class="statistic__data__view-circle"></span></p>
           </div>
           <div class="statistic__data__chart">
-              <StatisticLineUI :day="17">пн</StatisticLineUI>
-              <StatisticLineUI :day="18">вт</StatisticLineUI>
-              <StatisticLineUI :day="19">ср</StatisticLineUI>
-              <StatisticLineUI :day="20">чт</StatisticLineUI>
-              <StatisticLineUI :day="21">пт</StatisticLineUI>
-              <StatisticLineUI :day="22">сб</StatisticLineUI>
-              <StatisticLineUI :day="23">вс</StatisticLineUI>
+              <StatisticLineUI 
+                v-for="(item, index) in data[0].graphic"
+                :key="item.id"
+                :item="item"
+                :day="dayWeek(index)"
+              />
           </div>
       </div>
   </section>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
     name: "StatisticUI",
 
@@ -38,7 +39,34 @@ export default {
         return {
             img: 'https://demotivation.ru/wp-content/uploads/2020/07/unnamed-1-768x768.jpg'
         }
+    },
+
+    mounted() {
+        this.fetchData()
+    },
+
+    methods: {
+        ...mapActions({
+            fetchData: "data/likesData"
+        }),
+
+        dayWeek(index) {
+            let d = new Date()
+
+            d.setDate(d.getDate() - (6 - index))
+
+            return d.getDate()
+        }
+    },
+
+    computed: {
+        ...mapGetters({
+            data: "data/statisticLikes"
+        }),
+
     }
+
+
 }
 </script>
 
