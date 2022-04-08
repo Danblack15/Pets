@@ -14,9 +14,9 @@ import WriteNowUI from '@/components/ui/WriteNowUI/WriteNowUI'
 import ProgressDayUI from '@/components/ui/ProgressDayUI/ProgressDayUI'
 import ProgressGraph from '@/components/ui/ProgressGraph/ProgressGraph'
 import ProgressListUI from '@/components/ui/ProgressListUI/ProgressListUI'
+import FormUI from '@/components/ui/FormUI/FormUI'
 import StatisticUI from '@/components/ui/StatisticUI/StatisticUI'
 import StatisticLineUI from '@/components/ui/StatisticLineUI/StatisticLineUI'
-import FormUI from '@/components/ui/FormUI/FormUI'
 
 export default [
     ButtonUI,
