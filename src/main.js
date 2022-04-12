@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import App from '@/App'
 
 import components from '@/components/ui/index'
+
 import store from '@/store'
+import router from '@/router/index'
 
 import '@/assets/styles/main.css'
 
@@ -14,5 +16,6 @@ components.forEach(component => {
 
 
 app
+    .use(router)
     .use(store)
     .mount('#app')
