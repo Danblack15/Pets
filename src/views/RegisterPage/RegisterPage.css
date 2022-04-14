@@ -1,0 +1,66 @@
+.register{
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #0F172A;
+    justify-content: space-between;
+    align-items: center;
+}
+.register__img{
+    max-height: 100%;
+}
+.register__block{
+    width: 325px;
+    margin-right: 250px;
+}
+.register__block__name{
+    font-weight: 500;
+    font-size: 30px;
+    color: #EDF2F7;
+    margin-top: 32px;
+}
+.register__block__dop-info{
+    font-weight: 400;
+    font-size: 18px;
+    color: #D5D5DC;
+    margin-top: 10px;
+    line-height: 150%;
+}
+.register__block__quest{
+    font-weight: 400;
+    font-size: 18px;
+    color: #D5D5DC;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.register__block__link{
+    font-weight: bold;
+    color: #D5D5DC;
+}
+.register__block__link:hover{
+    color: #edf2f7a8;
+}
+.register__block__form{
+    width: 100%;
+    margin-top: 20px;
+}
+.register__block__bottom{
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .register__block{
+        margin-right: 109px;
+    }
+}
+@media (max-width: 768px) {
+    .register__img{
+        display: none;
+    }
+    .register__block{
+        margin-right: 0;
+    }
+    .register{
+        justify-content: center;
+    }
+}

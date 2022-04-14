@@ -8,6 +8,8 @@
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
     transition: 0.2s;
+    display: block;
+    text-align: center;
 }
 .button--small{
     padding: 11.5px 44.5px;

@@ -66,18 +66,23 @@
       <span class="form-hint" v-if="v$.form.password.$error">Заполните пароль</span>
     </fieldset>
 
-    <p class="form-forgot" v-if="!register">Забыли парль?</p>
+    <p class="form-forgot" v-if="!register">Забыли пароль?</p>
 
     <ButtonUI 
       wide 
+      :link="disabled"
+      :to="'/login'"
       :disabled="v$.$error" 
       v-if="register" class="form-button"
     >Зарегистрироваться</ButtonUI>
 
-    <ButtonUI 
-      wide 
-      :disabled="disabled" 
-      v-else class="form-button"
+    <ButtonUI
+      :link="disabled"
+      :to="'/home'"
+      wide
+      :disabled="v$.$errors.length > 1" 
+      v-else 
+      class="form-button"
     >Вход</ButtonUI>
   </form>
 </template>
@@ -97,7 +102,7 @@ export default {
     register: {
       type: Boolean,
       default: false,
-    },
+    }
   },
 
   data() {
@@ -124,8 +129,11 @@ export default {
   methods: {
     async submitForm() {
       const isFormCorrect = await this.v$.$validate()
-
-      if (isFormCorrect) {
+ 
+      if (isFormCorrect && this.register) {
+        console.log('Данные отправлены')
+        
+      } else if (!this.register && this.v$.$errors.length == 1) {
         console.log('Данные отправлены')
       } else {
         this.disabled = true

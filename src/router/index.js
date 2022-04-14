@@ -4,6 +4,7 @@ import IndexPage from '@/views/IndexPage/IndexPage'
 import NavBar from '@/components/NavBar/NavBar'
 import AuthPage from '@/views/AuthPage/AuthPage'
 import RegisterPage from '@/views/RegisterPage/RegisterPage'
+import HomePage from '@/views/HomePage/HomePage'
 
 const routes = [
     {
@@ -17,6 +18,10 @@ const routes = [
     {
         path: '/register',
         component: RegisterPage
+    },
+    {
+        path: '/home',
+        component: HomePage
     },
     {
         path: '/ui-kit',

@@ -1,6 +1,5 @@
 .wrapper-menu-icon{
-    width: 60px;
-    height: 58px;
+    padding: 18px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,4 +19,8 @@
 .menuItem:hover {
     background: #4C6FFF;
     transition: 0.2s;
+}
+.router-link-active{
+    background: #4C6FFF;
+    border-radius: 13px;
 }
