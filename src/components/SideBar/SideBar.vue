@@ -6,7 +6,11 @@
         <MenuList />
       </div>
 
-      <MenuHome menuItem>
+      <MenuHome
+        link
+        :href="'/'"
+        menuItem
+      >
           <img src="@/assets/img/logout.svg" alt="exit">
       </MenuHome>
   </section>

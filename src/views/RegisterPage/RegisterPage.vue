@@ -12,7 +12,7 @@
         Зарегистрируйтесь сейчас бесплатно и добавьте своего питомца
       </h4>
 
-      <FormUI register class="register__block__form" />
+      <FormRegister class="register__block__form" />
 
 			<div class="register__block__bottom">
 				<p class="register__block__quest">Уже есть аккаунт?</p>
@@ -26,7 +26,13 @@
 </template>
 
 <script>
-export default {};
+import FormRegister from '@/components/FormRegister/FormRegister'
+
+export default {
+  components: {
+    FormRegister
+  }
+};
 </script>
 
 <style src="./RegisterPage.css" scoped>

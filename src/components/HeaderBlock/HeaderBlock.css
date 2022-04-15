@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+}
+.header__actions{
+    display: flex;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 30px;
+    color: #EDF2F7;
+}
+.header__theme{
+    margin-right: 40px;
+}
+.header__notification{
+    margin-right: 17px;
+}

@@ -1,5 +1,5 @@
 <template>
-  <!-- <div class="from-item">
+  <div class="from-item">
     <p class="from-item-name">Форма default</p>
     <FormUI/>
     <input 
@@ -8,9 +8,9 @@
         value="<FormUI></FormUI>"
         disabled
     />
-  </div> -->
+  </div>
 
-  <div class="from-item">
+  <!-- <div class="from-item">
     <p class="from-item-name">Форма регистрации</p>
     <FormUI register/>
     <input 
@@ -19,7 +19,7 @@
         value="<FormUI register></FormUI>"
         disabled
     />
-  </div>
+  </div> -->
 </template>
 
 <script>

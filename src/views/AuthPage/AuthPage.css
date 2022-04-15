@@ -50,10 +50,15 @@
 
 @media (max-width: 1280px) {
     .auth__block{
-        margin-right: 109px;
+        margin-right: 109px;        
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 980px) {
+    .auth__block{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 880px) {
     .auth__img{
         display: none;
     }

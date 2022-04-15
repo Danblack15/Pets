@@ -13,22 +13,25 @@
         Войдите в систему сейчас, чтобы получить доступ к вашим питомцам
       </h4>
 
-      <FormUI class="auth__block__form" />
+      <FormLogin class="auth__block__form" />
 
-		<div class="auth__block__bottom">
-			<p class="auth__block__quest">У вас ещё нет аккаунта?</p>
-			<router-link 
-				to="/register" 
-				class="auth__block__link"
-			>Зарегистрироваться</router-link>
-		</div>
+      <div class="auth__block__bottom">
+        <p class="auth__block__quest">У вас ещё нет аккаунта?</p>
+        <router-link 
+          to="/register" 
+          class="auth__block__link"
+        >Зарегистрироваться</router-link>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import FormLogin from '@/components/FormLogin/FormLogin'
 export default {
-
+  components: {
+    FormLogin
+  }
 }
 </script>
 

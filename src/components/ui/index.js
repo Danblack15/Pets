@@ -17,6 +17,7 @@ import ProgressListUI from '@/components/ui/ProgressListUI/ProgressListUI'
 import FormUI from '@/components/ui/FormUI/FormUI'
 import StatisticUI from '@/components/ui/StatisticUI/StatisticUI'
 import StatisticLineUI from '@/components/ui/StatisticLineUI/StatisticLineUI'
+import InputUI from '@/components/ui/InputUI/InputUI'
 
 export default [
     ButtonUI,
@@ -37,5 +38,6 @@ export default [
     ProgressListUI,
     FormUI,
     StatisticUI,
-    StatisticLineUI
+    StatisticLineUI,
+    InputUI
 ]

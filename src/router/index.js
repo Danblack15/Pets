@@ -21,7 +21,10 @@ const routes = [
     },
     {
         path: '/home',
-        component: HomePage
+        component: HomePage,
+        meta: {
+            layout: 'HomeLayout'
+        }
     },
     {
         path: '/ui-kit',

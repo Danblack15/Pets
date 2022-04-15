@@ -1,0 +1,93 @@
+.form{
+    width: 235px;
+}
+fieldset{
+    border: none;
+    margin-bottom: 34px;
+    position: relative;
+}
+.form-input{
+    width: 100%;
+    padding: 8px;
+    background: none;
+    outline: none;
+    color: #D5D5DC;
+    border-bottom: 1px solid #EDF2F7;
+    font-weight: 400;
+    font-size: 14px;
+}
+.form-label{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #D5D5DC;
+    cursor: text;
+    transition: 0.2s;
+}
+.form-input:focus + .form-label{
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 10px;
+    transition: 0.2s;
+}
+.form-label--valid{
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 10px;
+    transition: 0.2s;
+}
+.form-forgot{
+    margin-top: -15px;
+    color: #D5D5DC;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form-forgot:hover{
+    color: #f1f1fa;
+    transition: 0.2s;
+}
+.form-button{
+    margin-top: 57px;
+}
+
+.form--error .form-input, .form--error .form-label {
+    color: #F16063;
+}
+.form--error .form-input{
+    border-bottom: 1px solid #F16063;
+}
+
+.form-item--success .form-input, .form-item--success .form-label{
+    color: #66CB9F;
+}
+.form-item--success .form-input{
+    border-bottom: 1px solid #66CB9F;
+}
+
+.form-hint{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 8px;
+    color: #F16063;
+    
+}
+.form--error .form-hint{
+    display: block;
+}
+
+.form-item--error .form-input{
+    color: #F16063;
+    border-bottom: 1px solid #F16063;
+}
+.form-item--error .form-label{
+    color: #F16063;
+}
