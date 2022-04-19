@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import markRaw from 'vue'
+import { markRaw } from "vue";
 import DefaultLayout from '@/layouts/DefaultLayout/DefaultLayout'
 
 export default {
@@ -13,7 +13,7 @@ export default {
 
 	data() {
 		return {
-			layout: DefaultLayout
+			layout: markRaw(DefaultLayout)
 		}
 	},
 
@@ -24,8 +24,9 @@ export default {
         try {
           const component = await import(
             `@/layouts/${route.meta.layout}/${route.meta.layout}.vue`
-          );
-          this.layout = component?.default || DefaultLayout
+          )
+          
+          this.layout = markRaw(component?.default || DefaultLayout)
         } catch (e) {
           this.layout = DefaultLayout;
         }
