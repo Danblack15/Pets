@@ -1,5 +1,159 @@
-.home{
+.home {
     max-width: 100%;
     height: 100%;
     padding-top: 50px;
+    padding: 0 30px;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.home::-webkit-scrollbar {
+    display: none;
+}
+
+.home__general {
+    display: flex;
+    justify-content: space-between;
+
+    animation-name: home__general;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes home__general {
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.home__general__chart {
+    margin: 0 40px;
+}
+
+.home__bottom{
+    display: flex;
+    margin-top: 40px;
+
+    animation-name: home__bottom;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes home__bottom {
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.home__bottom__write-now{
+    margin-left: 40px;
+}
+.home__bottom__statistic{
+    margin-left: 40px;
+}
+
+/*LOADING*/
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(225deg, rgba(41, 39, 46, 0.8) 0%, rgba(39, 39, 46, 0.8) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading__animate-wrapper{
+    width: 200px;
+    height: 40px;
+    transform: rotate(-45deg);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.loading__img{
+    width: 17.5px;
+    height: 17.5px;
+    transform: rotate(45deg);
+}
+.loading__img-left{
+
+    animation-name: left-leg;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes left-leg {
+    0%{
+
+    }
+    10%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: 0;
+        opacity: 0;
+    }
+    50%{
+        margin-left: 40%;
+        opacity: 1;
+    }
+    60%{
+        margin-left: 40%;
+        opacity: 0;
+    }
+    70%{
+        margin-left: 60%;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 60%;
+        opacity: 0;
+    }
+}
+.loading__img-right{
+
+    animation-name: left-right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+@keyframes left-right {
+    0%{
+
+    }
+    20%{
+        margin-left: 20%;
+        opacity: 1;
+    }
+    45%{
+        margin-left: 20%;
+        opacity: 0;
+    }
+    60%{
+        margin-left: 50%;
+        opacity: 1;
+    }
+    75%{
+        margin-left: 50%;
+        opacity: 0;
+    }
+    90%{
+        margin-left: 70%;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 70%;
+        opacity: 0;
+    }
 }

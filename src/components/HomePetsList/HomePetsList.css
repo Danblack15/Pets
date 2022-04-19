@@ -1,0 +1,54 @@
+.pets{
+    width: 860px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.pets__line{
+    display: flex;
+    transition: 0.4s ease;
+}
+.pets__item{
+    margin-right: 40px;
+}
+.pets__back{
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(-90deg, rgba(27, 35, 53, 0), rgba(15, 23, 42, 0.99) 30%);
+    z-index: 2;
+
+    animation-name: pets__back;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes pets__back {
+    100%{
+        opacity: 1;
+    }
+}
+.pets__next{
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, rgba(27, 35, 53, 0), rgba(15, 23, 42, 0.99) 30%);
+
+    animation-name: pets__next;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes pets__next {
+    100%{
+        opacity: 1;
+    }
+}

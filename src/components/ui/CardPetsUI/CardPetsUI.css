@@ -1,6 +1,6 @@
 .card-pets{
     width: 410px;
-    height: auto;
+    height: 290px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     padding: 0;
@@ -8,10 +8,11 @@
 .card-pets__img{
     overflow: hidden;
     width: inherit;
+    height: 180px;
     text-align: center;
 }
 .card-pets__img img{
-    max-width: 100%;
+    max-height: 100%;
     border-radius: 16px;
 }
 .card-pets__info{
@@ -33,6 +34,7 @@
     padding: 2px 10px;
     background: #4C6FFF;
     border-radius: 15px;
+    text-align: center;
 }
 .card-pets__info__likes{
     display: flex;

@@ -7,7 +7,7 @@
               </div>
               <p>На часах у нас</p>
           </div>
-          <h3>3:46</h3>
+          <h3>{{ timeNow }}</h3>
       </div>
       <div class="data-block__date">
           <div class="data-block__date-up">
@@ -16,7 +16,7 @@
               </div>
               <p>На календаре у нас</p>
           </div>
-          <h3>05.10.2021</h3>
+          <h3>{{ dateNow }}</h3>
       </div>
   </section>
 </template>
@@ -25,8 +25,35 @@
 export default {
     name: "DataUI",
 
-    props: {
-      
+    computed: {
+      timeNow() {
+        let date = new Date(),
+            hour = date.getHours(),
+            minutes = String(date.getMinutes())
+
+        if (minutes.length == 1) {
+          minutes = `0${minutes}`
+        }
+        
+        return `${hour}:${minutes}`
+      },
+
+      dateNow() {
+        let date = new Date(),
+            year = date.getFullYear(),
+            month = String(date.getMonth() + 1),
+            day = String(date.getDate())
+
+        if (month.length == 1) {
+          month = `0${month}`
+        }
+
+        if (day.length == 1) {
+          day = `0${day}`
+        }
+
+        return `${day}.${month}.${year}`
+      }
     }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section class="progress">
-    <ProgressGraph :chartData="chartData"/>
-    <ProgressListUI :chartData="chartData"/>
+    <ProgressGraph :chartData="chartData" />
+    <ProgressListUI :chartData="chartData" />
   </section>
 </template>
 
@@ -12,29 +12,30 @@ export default {
   data() {
     return {
       chartData: [
-				{
-					title: 'Прогулка в парке',
-					color: '#66CB9F',
-					complete: true
-				},
-				{
-					title: 'Обед',
-					color: '#FFEF5E',
-					complete: true
-				},
-				{
-					title: 'Перекус',
-					color: '#F16063',
-					complete: true
-				},
-				{
-					title: 'Игры',
-					color: '#4C6FFF',
-					complete: true
-				}
-			]
+        {
+          title: "Прогулка в парке",
+          color: "#66CB9F",
+          complete: true,
+        },
+        {
+          title: "Обед",
+          color: "#FFEF5E",
+          complete: true,
+        },
+        {
+          title: "Перекус",
+          color: "#F16063",
+          complete: true,
+        },
+        {
+          title: "Игры",
+          color: "#4C6FFF",
+          complete: true,
+        },
+      ],
     }
-  }
+	
+  },
 };
 </script>
 

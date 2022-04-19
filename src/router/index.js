@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar/NavBar'
 import AuthPage from '@/views/AuthPage/AuthPage'
 import RegisterPage from '@/views/RegisterPage/RegisterPage'
 import HomePage from '@/views/HomePage/HomePage'
+import NotFound from '@/views/NotFound/NotFound'
 
 const routes = [
     {
@@ -23,8 +24,21 @@ const routes = [
         path: '/home',
         component: HomePage,
         meta: {
+            layout: 'HomeLayout',
+            title: 'Home'
+        }
+    },
+    {
+        path: '/404', 
+        name: 'NotFound', 
+        component: NotFound,
+        meta: {
             layout: 'HomeLayout'
         }
+    },
+    {
+        path: '/:catchAll(.*)', 
+        redirect:'404'
     },
     {
         path: '/ui-kit',
