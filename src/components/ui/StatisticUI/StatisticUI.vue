@@ -56,7 +56,15 @@ export default {
 		};
   },
 
+  mounted() {
+    this.likesData()
+  },
+
   methods: {
+    ...mapActions({
+      likesData: "data/likesData"
+    }),
+
 		nextPet() {
 			if (this.petId < this.data.length - 1)
 				this.petId++

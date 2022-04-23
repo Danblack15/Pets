@@ -33,3 +33,45 @@
     stroke-width: 3;
     stroke-lineCap: round;
 }
+
+@media (max-width: 1620px) {
+    .graph__circle-percent{
+        font-size: 24px;
+    }
+    .graph__circle{
+        border: 18px solid #334155;
+    }
+    .chart__unit{
+        stroke-width: 2.9;
+    }
+}
+@media (max-width: 1220px) {
+    .graph{
+        width: 280px;
+        height: 280px;
+    }
+    .graph__circle-percent{
+        font-size: 40px;
+    }
+    .graph__circle{
+        border: 25px solid #334155;
+    }
+    .chart__unit{
+        stroke-width: 3;
+    }
+}
+@media (max-width: 710px) {
+    .graph{
+        width: 100px;
+        height: 100px;
+    }
+    .graph__circle-percent{
+        font-size: 14px;
+    }
+    .graph__circle{
+        border: 10px solid #334155;
+    }
+    .chart__unit{
+        stroke-width: 3.2;
+    }
+}

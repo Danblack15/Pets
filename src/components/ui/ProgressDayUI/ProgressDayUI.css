@@ -1,7 +1,21 @@
 .progress{
     display: flex;
+    justify-content: space-evenly;
     padding: 30px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
-    min-width: 560px;
+    min-width: 260px;
+}
+@media (max-width: 1220px) {
+    .progress{
+        padding: 38px;
+    }
+}
+@media (max-width: 710px) {
+    .progress{
+        min-width: 100%;
+        height: 183px;
+        align-items: center;
+        padding: 20px;
+    }
 }

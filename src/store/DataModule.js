@@ -6,7 +6,8 @@ export const DataModule = {
         postsData: [],
         allPets: [],
         groupPets: [],
-        loadingHome: true
+        loadingHome: true,
+        mediaMenu: false
     }),
 
     getters: {
@@ -24,6 +25,9 @@ export const DataModule = {
         },
         getLoadingHome(state) {
             return state.loadingHome
+        },
+        getMediaMenu(state) {
+            return state.mediaMenu
         }
     },
 
@@ -42,6 +46,9 @@ export const DataModule = {
         },
         setLoadingHome(state, data) {
             state.loadingHome = data
+        },
+        setMediaMenu(state, data) {
+            state.mediaMenu = data
         }
     },
 
@@ -52,7 +59,6 @@ export const DataModule = {
                 const res = await axios.get(api)
 
                 commit('setPostsData', res.data)
-                dispatch('likesData')
             } catch {
                 alert('Ошибка')
             }
@@ -64,7 +70,6 @@ export const DataModule = {
                 const res = await axios.get(api)
 
                 commit('setStatisticLikes', res.data)
-                dispatch('allPets')
             } catch {
                 alert('Ошибка')
             }
@@ -76,7 +81,6 @@ export const DataModule = {
                 const res = await axios.get(api)
 
                 commit('setAllPets', res.data)
-                dispatch('groupPets')
             } catch {
                 alert('Ошибка')
             }
@@ -92,6 +96,10 @@ export const DataModule = {
             } catch {
                 alert('Ошибка')
             }
+        },
+
+        showMediaMenu({state, commit}) {
+            commit('setMediaMenu', !state.mediaMenu)
         }
     },
 

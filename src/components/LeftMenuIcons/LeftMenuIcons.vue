@@ -33,7 +33,7 @@
     <input 
         type="text" 
         class="left-menu-item-tag"
-        value="<MenuHome></MenuHome>"
+        value="<MenuHome menuItem></MenuHome>"
         disabled
     />
   </div>  

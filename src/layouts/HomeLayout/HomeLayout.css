@@ -7,3 +7,11 @@
     padding-left: 100px;
     overflow: hidden;
 }
+@media (max-width: 1220px) {
+    .side-bar{
+        display: none;
+    }
+    .general-wrapper{
+        padding-left: 0;
+    }
+}

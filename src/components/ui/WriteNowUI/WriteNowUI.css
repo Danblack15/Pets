@@ -40,3 +40,65 @@
     font-weight: 700;
     font-size: 14px;
 }
+.write-now__avatar:nth-child(6){
+    display: none;
+}
+
+@media (max-width: 1620px) {
+    .write-now{
+        width: 210px;
+        height: 260px;
+    }
+    .write-now__avatar:nth-child(5){
+        display: none;
+    }
+    .write-now__avatar:nth-child(4){
+        display: none;
+    }
+    .write-now__avatar{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1220px) {
+    .write-now{
+        width: auto;
+        height: 320px;
+        max-width: 289px;
+        min-width: 250px;
+        padding: 25px;
+    }
+    .write-now__avatar:nth-child(5){
+        display: flex;
+    }
+    .write-now__avatar:nth-child(4){
+        display: flex;
+    }
+    .write-now__avatar{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 710px) {
+    .write-now{
+        width: 100%;
+        max-width: none;
+        min-width: none;
+        height: auto;
+        align-items: center;
+        padding: 30px 25px;
+    }
+    .write-now__avatar:nth-child(6){
+        display: flex;
+    }
+    .write-now__friends{
+        justify-content: center;
+        max-width: 345px;
+    }
+    .write-now__avatar{
+        margin: 0 5px;
+        margin-bottom: 35px;
+    }
+    .write-now__add{
+        margin-left: 5px;
+        margin-bottom: 35px;
+    }
+}

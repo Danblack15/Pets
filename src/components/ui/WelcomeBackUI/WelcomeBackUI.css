@@ -25,3 +25,30 @@
 .welcome-back__text h3:nth-child(3){
     margin-top: 10px;
 }
+
+@media (max-width: 1620px) {
+    .welcome-back__img{
+        width: 197px;
+    }
+    .welcome-back{
+        height: 302px;
+    }
+}
+@media (max-width: 710px) {
+    .welcome-back{
+        height: 167px;
+    }
+    .welcome-back__text h3:nth-child(3){
+        margin-top: 14px;
+    }
+    .welcome-back__img{
+        display: none;
+    }
+    .welcome-back__text h2{
+        font-size: 18px;
+    }
+    .welcome-back__text h3{
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

@@ -32,3 +32,22 @@
 .progress-list__status img{
     width: 7px;
 }
+@media (max-width: 1220px) {
+    .progress-list-name{
+        font-size: 24px;
+    }
+    .progress-list__item{
+        font-size: 24px;
+    }
+}
+@media (max-width: 710px) {
+    .progress-list{
+        margin-left: 20px;
+    }
+    .progress-list-name{
+        font-size: 12px;
+    }
+    .progress-list__item{
+        font-size: 12px;
+    }
+}

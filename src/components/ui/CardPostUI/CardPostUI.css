@@ -4,7 +4,7 @@
     align-items: flex-start;
     padding: 30px;
     width: 410px;
-    height: 210px;
+    height: inherit;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;    
     position: relative;
@@ -54,4 +54,25 @@
     margin-top: 15px;
     width: 100%;
     color: #FFFFFF;
+}
+
+@media (max-width: 1620px) {
+    .card-post__text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .card-post{
+        width: 325px;
+    }
+}
+@media (max-width: 1220px) {
+    .card-post{
+        width: 420px;
+    }
+}
+@media (max-width: 710px) {
+    .card-post{
+        width: 100%;
+        height: 250px;
+    }
 }

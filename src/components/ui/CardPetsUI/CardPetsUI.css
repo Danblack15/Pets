@@ -49,3 +49,34 @@
     font-size: 15px;
     margin-right: 15px;
 }
+
+@media (max-width: 1620px) {
+    .card-pets{
+        width: 325px;
+        height: 302px;
+    }
+}
+@media (max-width: 1220px) {
+    .card-pets{
+        width: 420px;
+        height: 330px;
+    }
+    .card-pets__img{
+        height: 220px;
+    }
+}
+@media (max-width: 710px) {
+    .card-pets{
+        height: 300px;
+        width: 100%;
+    }
+    .card-pets__img{
+        height: 180px;
+    }
+    .card-pets__info{
+        width: 100%;
+    }
+    .card-pets__img{
+        width: 100%;
+    }
+}

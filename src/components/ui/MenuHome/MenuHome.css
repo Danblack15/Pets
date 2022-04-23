@@ -24,3 +24,10 @@
     background: #4C6FFF;
     border-radius: 13px;
 }
+
+@media (max-width: 1220px) {
+    .wrapper-menu-icon{
+        padding: 10px;
+        border-radius: 8px;
+    }
+}

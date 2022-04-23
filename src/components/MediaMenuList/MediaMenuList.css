@@ -1,0 +1,40 @@
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+}
+.menu-list__list{
+    display: flex;
+    flex-direction: column;
+}
+.menu-list__list a{
+    display: flex;
+    color: #EDF2F7;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.menu-list__list li p{
+    margin-left: 10px;
+}
+.menu-list__item img{
+    width: 16.5px;
+}
+.menu-list__item--home{
+    background: linear-gradient(225deg, #D665FF 0%, #4C6FFF 100%);
+}
+.menu-list__item--pets{
+    background: linear-gradient(225deg, #FFC656 0%, #F16063 100%)
+}
+.menu-list__item--blog{
+    background: linear-gradient(225deg, #FFEF5E 0%, #F7936F 100%);
+}
+.menu-list__item--chat{
+    background: linear-gradient(224.47deg, #FF92AE 8.18%, #FF3D9A 95.84%);
+}
+.menu-list__item--profile{
+    background: linear-gradient(225deg, #67E9F1 0%, #24E795 100%);
+}

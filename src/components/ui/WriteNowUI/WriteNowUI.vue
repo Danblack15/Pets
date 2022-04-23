@@ -6,6 +6,7 @@
           <AvatarUI post class="write-now__avatar"/>
           <AvatarUI post class="write-now__avatar"/>
           <AvatarUI post class="write-now__avatar"/>
+          <AvatarUI post class="write-now__avatar"/>
           <div class="write-now__add">+</div>
       </div>
       <ButtonUI wide class="write-now-button">Напиши сейчас</ButtonUI>
@@ -17,8 +18,10 @@
 export default {
     name: "WriteNowUI",
 
-    props: {
-       
+    computed: {
+        windowWidth() {
+            return document.documentElement.clientWidth
+        }
     }
 }
 </script>

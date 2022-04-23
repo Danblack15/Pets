@@ -39,3 +39,14 @@
 .active{
     background: #4C6FFF;
 }
+@media (max-width: 710px) {
+    .theme{
+        height: 32px;
+    }
+    .theme__label{
+        height: 22px;
+    }
+    .theme__label img{
+        width: 15.5px;
+    }
+}

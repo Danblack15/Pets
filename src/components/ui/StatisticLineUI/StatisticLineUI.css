@@ -33,10 +33,21 @@
     width: inherit;
     background: #F16063;
     border-radius: 6px;
+    margin-bottom: 3px;
 }
 .chart-item__views{
     display: block;
     width: inherit;
     background: #66CB9F;
     border-radius: 6px;
+}
+@media (max-width: 1220px) {
+    .chart-item__line{
+        width: 13px;
+    }
+}
+@media (max-width: 710px) {
+    .chart-item__line{
+        width: 10px;
+    }
 }

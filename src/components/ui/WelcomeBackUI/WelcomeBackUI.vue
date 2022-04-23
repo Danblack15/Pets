@@ -5,7 +5,7 @@
         <h3>Не забудь покормить своего питомца</h3>
         <h3>Хорошего дня!</h3>
       </div>
-      <img src="@/assets/img/welcomeImg.svg" alt="welcome_img">
+      <img src="@/assets/img/welcomeImg.svg" alt="welcome_img" class="welcome-back__img">
   </section>
 </template>
 
