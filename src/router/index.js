@@ -6,6 +6,7 @@ import AuthPage from '@/views/AuthPage/AuthPage'
 import RegisterPage from '@/views/RegisterPage/RegisterPage'
 import HomePage from '@/views/HomePage/HomePage'
 import NotFound from '@/views/NotFound/NotFound'
+import PetsPage from '@/views/PetsPage/PetsPage'
 
 const routes = [
     {
@@ -26,6 +27,14 @@ const routes = [
         meta: {
             layout: 'HomeLayout',
             title: 'Home'
+        }
+    },
+    {
+        path: '/pets',
+        component: PetsPage,
+        meta: {
+            layout: 'HomeLayout',
+            title: 'Питомцы'
         }
     },
     {

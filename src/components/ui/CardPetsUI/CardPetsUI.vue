@@ -1,5 +1,5 @@
 <template>
-  <section class="card-pets" v-if="groupPets.length">
+  <section class="card-pets" v-if="groupPets.length" :class="{'card-pets--masonry':masonry}">
       <div class="card-pets__img">
           <img :src="pet.previewImg" alt="pet">
       </div>
@@ -26,6 +26,10 @@ export default {
         pet: {
             type: Object,
             required: true
+        },
+        masonry: {
+            type: Boolean,
+            default: false
         }
     },
 

@@ -49,7 +49,12 @@
     font-size: 15px;
     margin-right: 15px;
 }
-
+.card-pets--masonry .card-pets__img{
+    height: auto;
+}
+.card-pets--masonry .card-pets__img img{
+    width: 100%;
+}
 @media (max-width: 1620px) {
     .card-pets{
         width: 325px;

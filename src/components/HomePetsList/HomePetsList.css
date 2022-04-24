@@ -92,6 +92,7 @@
     }
     .wrapper__media-pets__item{
         width: auto;
+        cursor: grab;
         transition: 0.2s;
     }
     .swiper-slide-prev{

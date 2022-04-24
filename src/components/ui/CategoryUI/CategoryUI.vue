@@ -1,12 +1,18 @@
 <template>
   <div class="pet-category" @click="activated">
       <div class="pet-category__wrapper">
-          <img src="@/assets/img/categoryCat.svg" alt="pet">
-          <div class="pet-category__tranformer" :class="{isActive: activeCategory}"></div>
+          <img 
+            :src="require(`@/assets/img/${imgCategory[category.id - 1].img}.svg`)" 
+            alt="pet"
+          />
+          <div 
+            class="pet-category__tranformer" 
+            :class="{isActive: activeCategory}"
+          ></div>
       </div>
-      <h3 
-        :class="['pet-category-name', {activeName: activeCategory}]"
-      >Коты</h3>
+      <h3 :class="['pet-category-name', {activeName: activeCategory}]">
+        {{category.name}}
+      </h3>
   </div>
 </template>
 
@@ -19,11 +25,41 @@ export default {
         type: Boolean,
         default: false
       },
+      category: {
+        type: Object,
+        required: true
+      }
     },
 
     data() {
       return {
-        activeCategory: this.active
+        activeCategory: this.active,
+        imgCategory: [
+          {
+            id: 1,
+            img: 'dogs'
+          },
+          {
+            id: 2,
+            img: 'cats'
+          },
+          { 
+            id: 3,
+            img: 'birds'
+          },
+          { 
+            id: 4,
+            img: 'rabbits'
+          },
+          {
+            id: 5,
+            img: 'mice'
+          },
+          {
+            id: 6,
+            img: 'other'
+          }
+        ]
       }
     },
 
