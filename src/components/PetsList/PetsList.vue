@@ -2,7 +2,7 @@
   <section class="pets-list" v-if="allPets.length">
     <div
       v-masonry
-      transition-duration="0.3s"
+      transition-duration="0.2s"
       item-selector=".pets-list__item"
 			:cols="{default: 3, 1920: 3, 1220: 2, 710: 1}"
 			gutter=".gutter-sizer"

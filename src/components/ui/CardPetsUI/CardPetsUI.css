@@ -55,6 +55,12 @@
 .card-pets--masonry .card-pets__img img{
     width: 100%;
 }
+.card-pets__info__like{
+    cursor: pointer;
+}
+.card-pets__info__like--liked{
+    fill: #F16063;
+}
 @media (max-width: 1620px) {
     .card-pets{
         width: 325px;
