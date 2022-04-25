@@ -1,5 +1,5 @@
 <template>
-  <section class="side-bar">
+  <aside class="side-bar">
       <div class="side-bar__up">
         <LogoUI class="side-bar__logo"/>
 
@@ -13,7 +13,7 @@
       >
           <img src="@/assets/img/logout.svg" alt="exit">
       </MenuHome>
-  </section>
+  </aside>
 </template>
 
 <script>

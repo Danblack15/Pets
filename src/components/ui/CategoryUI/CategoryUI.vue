@@ -1,5 +1,5 @@
 <template>
-  <div class="pet-category" @click="activated">
+  <button type="checkbox" class="pet-category" @click="activated">
       <div class="pet-category__wrapper">
           <img 
             :src="require(`@/assets/img/${imgCategory[category.id - 1].img}.svg`)" 
@@ -13,7 +13,7 @@
       <h3 :class="['pet-category-name', {activeName: activeCategory}]">
         {{category.name}}
       </h3>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
       category: {
         type: Object,
         required: true
-      }
+      },
     },
 
     data() {
