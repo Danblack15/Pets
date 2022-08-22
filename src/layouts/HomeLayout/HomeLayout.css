@@ -6,6 +6,10 @@
     height: 100vh;
     padding-left: 100px;
     overflow: hidden;
+    transition: background 0.5s;
+}
+.general-wrapper--white {
+    background: #EDF2F7;
 }
 @media (max-width: 1220px) {
     .side-bar{

@@ -1,6 +1,9 @@
 <template>
 	<section class="wrapper">
-		<section class="wrapper__posts" v-show="!loading">
+		<section :class="['wrapper__posts', {
+				'wrapper__posts--white': whiteTheme
+			}]" 
+			v-show="!loading">
 			<div class="wrapper__posts__back" v-show="slideInc > 0">
 				<ArrowUI left class="wrapper__posts__arrow" @click="backSlideList"/>
 			</div>
@@ -11,6 +14,7 @@
 					:key="post.id"
 					:post="post"
 					class="wrapper__posts__post" 
+					:whiteTheme="whiteTheme"
 				/>
 			</div>
 
@@ -28,6 +32,7 @@
 				>
 					<CardPostUI
 						:post="post"
+						:whiteTheme="whiteTheme"
 					/>
 				</swiper-slide>
 			</swiper>
@@ -41,7 +46,7 @@ import { mapGetters, mapActions } from "vuex";
 import SwiperCore, {Navigation, Parallax} from "swiper"
 import { Swiper, SwiperSlide } from "swiper/vue"
 
-import 'swiper/css';
+import "swiper/swiper.min.css";
 
 export default {
 	components: {
@@ -93,7 +98,8 @@ export default {
 	computed: {
 		...mapGetters({
 			postsData: "data/getPostsData",
-			loading: "data/getLoadingHome"
+			loading: "data/getLoadingHome",
+			whiteTheme: "data/getWhiteTheme"
 		})
 	}
 };

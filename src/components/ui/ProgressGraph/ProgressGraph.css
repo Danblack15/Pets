@@ -21,6 +21,7 @@
     font-size: 40px;
     color: #FFFFFF;
     z-index: 999;
+    transition: color 0.5s;
 }
 
 .chart{
@@ -32,8 +33,24 @@
     fill: none;
     stroke-width: 3;
     stroke-lineCap: round;
-}
 
+    animation-name: chart__unit;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes chart__unit {
+    0%{
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100%{
+        stroke-dashoffset: auto;
+        opacity: 1;
+    }
+}
+.graph--white .graph__circle-percent{
+    color: #17171B;
+}
 @media (max-width: 1620px) {
     .graph__circle-percent{
         font-size: 24px;
@@ -42,7 +59,7 @@
         border: 18px solid #334155;
     }
     .chart__unit{
-        stroke-width: 2.9;
+        stroke-width: 3.3;
     }
 }
 @media (max-width: 1220px) {

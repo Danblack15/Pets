@@ -1,11 +1,17 @@
 .categories{
     width: 260px;
+    height: 100%;
 }
 .categories__wrapper{
     width: inherit;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 100%;
+    overflow-y: auto;
+}
+.categories__wrapper::-webkit-scrollbar{
+    width: 0;
 }
 .categories__item{
     margin-bottom: 20px;
@@ -19,6 +25,7 @@
 @media (max-width: 1220px) {
     .categories{
         width: 100%;
+        height: auto;
     }
     .categories__wrapper{
         justify-content: space-evenly;
@@ -27,12 +34,12 @@
 @media (max-width: 710px) {
     .categories{
         overflow-x: scroll;
-        min-height: 91px;
+        height: auto;
     }
     .categories__wrapper{
         justify-content: flex-start;
         flex-wrap: nowrap;
-        height: 91px;
+        height: auto;
         min-width: 100%;
     }
     .categories::-webkit-scrollbar{

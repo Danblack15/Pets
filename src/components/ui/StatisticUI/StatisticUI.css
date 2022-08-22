@@ -6,6 +6,7 @@
     padding: 30px;
     display: flex;
     justify-content: space-evenly;
+    transition: background 0.5s;
 }
 .statistic__person{
     width: 180px;
@@ -62,22 +63,23 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    color: #FFFFFF;
+    transition: color 0.5s;
 }
 .statistic__person__name h3{
     font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
 }
 .statistic__person__name h4{
     font-weight: 400;
     font-size: 14px;
-    color: #FFFFFF;
 }
 .statistic__data__name{
     display: flex;
     font-weight: 400;
     font-size: 12px;
     color: #FFFFFF;
+    transition: color 0.5s;
 }
 .statistic__data__name p{
     display: flex;
@@ -106,6 +108,16 @@
     display: flex;
     justify-content: space-between;
     height: 197px;
+}
+
+.statistic--white{
+    background: #FFFFFF;
+}
+.statistic--white .statistic__person__name {
+    color: #0F172A;
+}
+.statistic--white .statistic__data__name {
+    color: #0F172A;
 }
 
 @media (max-width: 1620px) {

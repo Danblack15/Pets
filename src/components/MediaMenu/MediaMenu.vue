@@ -1,10 +1,15 @@
 <template>
-  <section class="menu">
+  <section :class="['menu', {
+    'menu--white': whiteTheme
+  }]">
     <MenuHome class="menu__close" menuItem active @click="closeMediaMenu">
       <img src="@/assets/img/cross.svg" alt="close"/>
     </MenuHome>
 
-    <MediaMenuList @click="closeMediaMenu"/>
+    <MediaMenuList 
+      @click="closeMediaMenu"
+      :whiteTheme="whiteTheme"
+    />
 
     <MenuHome link :href="'/'" menuItem class="menu__exit" @click="closeMediaMenu">
       <img src="@/assets/img/logout.svg" alt="exit" />
@@ -13,7 +18,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import MediaMenuList from "@/components/MediaMenuList/MediaMenuList";
 
 export default {
@@ -24,6 +29,12 @@ export default {
   methods: {
     ...mapActions({
       closeMediaMenu: "data/showMediaMenu"
+    })
+  },
+
+  computed: {
+    ...mapGetters({
+      whiteTheme: "data/getWhiteTheme"
     })
   }
 };

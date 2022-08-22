@@ -10,6 +10,7 @@
     overflow: hidden;
     cursor: pointer;
     color: #EDF2F7;
+    transition: 0.5s;
 }
 .pet-category__wrapper{
     width: 42px;
@@ -46,6 +47,12 @@
 }
 .activeName{
     color: #EDF2F7;
+}
+
+.pet-category--white {
+    background: #FFFFFF;
+    color: #0F172A;
+    transition: 0.5s;
 }
 
 @media (max-width: 1550px) {

@@ -1,11 +1,15 @@
 <template>
-  <section class="progress">
-    <ProgressGraph :chartData="chartData" />
-    <ProgressListUI :chartData="chartData" />
+  <section :class="['progress', {
+    'progress--white': whiteTheme
+  }]">
+    <ProgressGraph :chartData="chartData" :whiteTheme="whiteTheme"/>
+    <ProgressListUI :chartData="chartData" :whiteTheme="whiteTheme"/>
   </section>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: "ProgressDayUI",
 
@@ -36,6 +40,12 @@ export default {
     }
 	
   },
+
+  computed: {
+    ...mapGetters({
+      whiteTheme: "data/getWhiteTheme"
+    })
+  }
 };
 </script>
 

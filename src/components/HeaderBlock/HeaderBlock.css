@@ -13,6 +13,12 @@
     font-weight: 700;
     font-size: 30px;
     color: #EDF2F7;
+    margin-left: 35px;
+    transition: color 0.5s;
+}
+.header__general__back{
+    cursor: pointer;
+    margin-right: 35px;
 }
 .header__theme{
     margin-right: 40px;
@@ -22,6 +28,10 @@
 }
 .header__media-open{
     display: none;
+}
+
+.header--white .header__title{
+    color: #0F172A;
 }
 
 @media (max-width: 1620px) {

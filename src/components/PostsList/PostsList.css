@@ -66,6 +66,21 @@
     display: none;
 }
 
+.wrapper__posts--white .arrow {
+    background: #4C6FFF;
+}
+
+.wrapper__posts--white .wrapper__posts__next {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #EDF2F7 30%);
+}
+
+.wrapper__posts--white .wrapper__posts__back {
+    background: linear-gradient(-90deg, rgba(27, 35, 53, 0), #edf2f700 30%);
+}
+.wrapper__posts--white .wrapper__posts__back:hover {
+    background: linear-gradient(-90deg, rgba(27, 35, 53, 0), #edf2f7 30%);
+}
+
 @media (max-width: 1620px) {
     .wrapper__posts{
         height: 260px;
@@ -100,6 +115,7 @@
     }
     .wrapper__media-posts__item{
         width: auto;
+        cursor: grab;
         transition: 0.2s;
     }
     .swiper-slide-prev{

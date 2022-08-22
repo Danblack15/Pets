@@ -16,11 +16,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
 .data-block__time h3{
     font-weight: 500;
     font-size: 32px;
-    color: #FFFFFF;
 }
 .data-block__time-up{
     display: flex;
@@ -47,11 +48,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
 .data-block__date h3{
     font-weight: 700;
-    font-size: 32px;
-    color: #FFFFFF;
+    font-size: 32px
 }
 .data-block__date-up{
     display: flex;
@@ -67,6 +69,13 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+}
+
+.data-block--white .data-block__time,
+.data-block--white .data-block__date{
+    background: #FFFFFF;
+    color: #0F172A;
+    transition: 0.5s;
 }
 
 @media (max-width: 1620px) {

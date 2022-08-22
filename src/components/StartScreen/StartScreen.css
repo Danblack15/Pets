@@ -68,3 +68,6 @@
     color: #EDF2F7;
     margin-top: 7px;
 }
+.start-screen__navigate__link:hover{
+    color: #edf2f7a8;
+}

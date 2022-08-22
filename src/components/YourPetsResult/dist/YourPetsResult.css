@@ -1,0 +1,27 @@
+.pets-result {
+  color: #FFFFFF;
+}
+.pets-result__general {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row-gap: 53px;
+}
+.pets-result__img {
+  margin-top: 90px;
+}
+.pets-result__text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.pets-result__btn {
+  position: absolute;
+  bottom: 30px;
+  font-size: 14px !important;
+  padding: 11.5px 96.5px !important;
+}
+.pets-result--white {
+  color: #334155;
+}

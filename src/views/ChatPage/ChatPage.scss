@@ -1,0 +1,45 @@
+.chat {
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	padding: 30px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	&__users {
+		width: 410px;
+		min-width: 325px;
+		max-height: 100%;
+	}
+
+	&__messages {
+		width: 860px;
+		max-height: 100%;
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.chat {
+		flex-direction: column;
+		padding: 24px;
+
+		&__users {
+			width: 100%;
+
+			&--disabled {
+				display: none;
+			}
+		}
+
+		&__messages {
+			display: none;
+			margin-left: 0;
+			max-width: 100%;
+			
+			&--active {
+				display: block;
+			}
+		}
+	}
+}

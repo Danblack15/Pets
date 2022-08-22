@@ -1,0 +1,15 @@
+.news-list {
+	margin-top: 18px;
+
+	&__item {
+		margin-bottom: 40px;
+
+		&:nth-child(odd) {
+			width: 710px;
+		}
+	
+		&:nth-child(even) {
+			width: 410px;
+		}
+	}
+}

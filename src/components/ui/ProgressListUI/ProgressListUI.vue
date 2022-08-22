@@ -1,5 +1,7 @@
 <template>
-  <div class="progress-list">
+  <div :class="['progress-list', {
+    'progress-list--white': whiteTheme
+  }]">
     <p class="progress-list-name">Ежедневный прогресс</p>
     <ul class="progress-list__list">
       <li
@@ -29,6 +31,11 @@ export default {
   props: {
     chartData: {
       type: Array
+    },
+
+    whiteTheme: {
+      type: Boolean,
+      default: false
     }
   }
 };

@@ -8,6 +8,10 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+    transition: background 0.5s;
+}
+.notification-button--white{
+    background: #FFFFFF;
 }
 .notification-button img{
     transition: 0.2s;

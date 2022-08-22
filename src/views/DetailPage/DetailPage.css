@@ -1,0 +1,23 @@
+.detail-pet{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #0F172A;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+}
+.detail-pet__wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.detail-pet__slider{
+    max-width: 710px;
+    height: 100%;
+}
+.detail-pet__info{
+    width: 100%;
+    height: 100%;
+}

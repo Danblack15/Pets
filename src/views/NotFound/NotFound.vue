@@ -1,5 +1,7 @@
 <template>
-  <section class="not-found">
+  <section :class="['not-found', {
+		'not-found--white': whiteTheme
+	}]">
     <img
       :src="require(`@/assets/img/${data[getRandom].img}.svg`)"
       alt="not-found"
@@ -11,6 +13,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
 	data() {
 		return {
@@ -40,6 +44,10 @@ export default {
 	},
 
   computed: {
+		...mapGetters({
+			whiteTheme: "data/getWhiteTheme"
+		}),
+
     getRandom() {
       return Math.floor(Math.random() * 4)
     },

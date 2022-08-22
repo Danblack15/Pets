@@ -8,7 +8,8 @@
           menuItem  
           class="menu-list__item"
         >
-            <img src="@/assets/img/homeicon.svg" alt="home">
+            <img src="@/assets/img/homeicon.svg" alt="home" v-if="!whiteTheme">
+            <img src="@/assets/img/homeiconblack.svg" alt="home" v-else>
         </MenuHome>
       </li>
 
@@ -19,7 +20,8 @@
           menuItem 
           class="menu-list__item"
         >
-            <img src="@/assets/img/petsicon.svg" alt="pets">
+            <img src="@/assets/img/petsicon.svg" alt="pets" v-if="!whiteTheme">
+            <img src="@/assets/img/petsiconblack.svg" alt="pets" v-else>
         </MenuHome>
       </li>
 
@@ -30,7 +32,8 @@
           menuItem 
           class="menu-list__item"
         >
-            <img src="@/assets/img/blogicon.svg" alt="blog">
+            <img src="@/assets/img/blogicon.svg" alt="blog" v-if="!whiteTheme">
+            <img src="@/assets/img/blogiconblack.svg" alt="blog" v-else>
         </MenuHome>
       </li>
 
@@ -41,18 +44,20 @@
           menuItem 
           class="menu-list__item"
         >
-            <img src="@/assets/img/chaticon.svg" alt="chat">
+            <img src="@/assets/img/chaticon.svg" alt="chat" v-if="!whiteTheme">
+            <img src="@/assets/img/chaticonblack.svg" alt="chat" v-else>
         </MenuHome>
       </li>
 
       <li>
         <MenuHome 
           link 
-          :href="'/person'"
+          :href="'/profile'"
           menuItem 
           class="menu-list__item"
         >
-            <img src="@/assets/img/personicon.svg" alt="person">
+            <img src="@/assets/img/personicon.svg" alt="person" v-if="!whiteTheme">
+            <img src="@/assets/img/personiconblack.svg" alt="person" v-else>
         </MenuHome>
       </li>
     </ul>
@@ -61,7 +66,12 @@
 
 <script>
 export default {
-
+  props: {
+    whiteTheme: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 

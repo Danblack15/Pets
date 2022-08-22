@@ -1,5 +1,7 @@
 <template>
-  <section class="graph">
+  <section :class="['graph', {
+    'graph--white': whiteTheme
+  }]">
     <div class="graph__circle">
       <p class="graph__circle-percent">{{ totalPer }}%</p>
     </div>
@@ -12,7 +14,7 @@
           :style="{
             stroke: item.color,
             'stroke-dasharray': 100 / chartData.length + ' 100',
-            'stroke-dashoffset': -(100 / chartData.length) * index,
+            'stroke-dashoffset': -(100 / chartData.length) * index
           }"
         ></circle>
       </template>
@@ -28,6 +30,11 @@ export default {
     chartData: {
       type: Array,
     },
+
+    whiteTheme: {
+      type: Boolean,
+      default: false
+    }
   },
 
   computed: {

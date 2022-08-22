@@ -45,6 +45,7 @@
     align-items: center;
     justify-content: flex-end;
     background: linear-gradient(90deg, rgba(27, 35, 53, 0), rgba(15, 23, 42, 0.99) 30%);
+    transition: background 0.5s;
 
     animation-name: pets__next;
     animation-duration: 0.2s;
@@ -58,6 +59,21 @@
 }
 .wrapper__media-pets{
     display: none;
+}
+
+.pets--white .pets__next{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #EDF2F7 30%);
+}
+.pets--white .arrow {
+    background: #4C6FFF;
+}
+
+.pets--white .pets__back {
+    background: linear-gradient(-90deg, rgba(27, 35, 53, 0), #edf2f700 30%);
+}
+
+.pets--white .pets__back:hover {
+    background: linear-gradient(-90deg, rgba(27, 35, 53, 0), #edf2f7 30%);
 }
 
 @media (max-width: 1620px) {

@@ -8,6 +8,7 @@
     font-weight: 700;
     font-size: 18px;
     color: #FFFFFF;
+    transition: color 0.5s;
 }
 .progress-list__list{
     margin-top: 20px;
@@ -19,6 +20,7 @@
     font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 10px;
+    transition: color 0.5s;
 }
 .progress-list__status{
     width: 15px;
@@ -31,6 +33,10 @@
 }
 .progress-list__status img{
     width: 7px;
+}
+.progress-list--white  .progress-list-name, 
+.progress-list--white .progress-list__item{
+    color: #17171B;
 }
 @media (max-width: 1220px) {
     .progress-list-name{

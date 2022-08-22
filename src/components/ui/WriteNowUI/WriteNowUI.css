@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background 0.5s;
 }
 .write-now__friends{
     display: flex;
@@ -30,7 +31,8 @@
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.5s;
+
 }
 .write-now__add:hover{
     filter: brightness(50%);
@@ -42,6 +44,16 @@
 }
 .write-now__avatar:nth-child(6){
     display: none;
+}
+
+.write-now--white {
+    background: #FFFFFF;
+}
+
+.write-now--white .write-now__add {
+    border: 1px dashed #0F172A;
+    color: #0F172A;
+    transition: 0.5s;
 }
 
 @media (max-width: 1620px) {

@@ -1,5 +1,8 @@
 <template>
-  <section class="statistic" v-if="data.length">
+  <section :class="['statistic', {
+      'statistic--white':whiteTheme
+    }]" 
+    v-if="data.length">
     <div class="statistic__person">
       <div
         class="statistic__person__avatar"
@@ -38,6 +41,7 @@
           :key="item.id"
           :item="item"
           :day="dayWeek(index)"
+          :whiteTheme="whiteTheme"
         />
       </div>
     </div>
@@ -87,6 +91,7 @@ export default {
   computed: {
     ...mapGetters({
       data: "data/statisticLikes",
+      whiteTheme: "data/getWhiteTheme"
     }),
   },
 };

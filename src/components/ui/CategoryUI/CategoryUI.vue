@@ -1,5 +1,11 @@
 <template>
-  <button type="checkbox" class="pet-category" @click="activated">
+  <button 
+    type="checkbox" 
+    :class="['pet-category', {
+      'pet-category--white': whiteTheme
+    }]" 
+    @click="activated"
+  >
       <div class="pet-category__wrapper">
           <img 
             :src="require(`@/assets/img/${imgCategory[category.id - 1].img}.svg`)" 
@@ -17,6 +23,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
     name: "CategoryUI",
 
@@ -67,6 +75,12 @@ export default {
       activated() {
         this.activeCategory = !this.activeCategory
       } 
+    },
+
+    computed: {
+      ...mapGetters({
+        whiteTheme: "data/getWhiteTheme"
+      })
     }
 }
 </script>

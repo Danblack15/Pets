@@ -1,7 +1,8 @@
 <template>
   <section class="pets">
-    <CategoryList class="pets__category" @categoryArr="pushCategoryArr"/>
-    <PetsList class="pets__list" :allPets="sortedPets"/>
+    <CategoryList class="pets__category" @categoryArr="pushCategoryArr" />
+    <PetsList class="pets__list" :allPets="sortedPets" />
+    <router-view></router-view>
   </section>
 
   <section class="loading" v-if="loading">
@@ -32,43 +33,37 @@ export default {
     PetsList,
   },
 
-  mounted() {
-    this.getAllPets()
-  },
-
   data() {
     return {
-      categoryArr: []
-    }
+      categoryArr: [],
+    };
   },
 
   methods: {
-    ...mapActions({
-      getAllPets: "data/allPets",
-    }),
-
     pushCategoryArr(e) {
       if (this.categoryArr.includes(e)) {
-        this.categoryArr = this.categoryArr.filter((c) => c !== e) 
+        this.categoryArr = this.categoryArr.filter((c) => c !== e);
       } else {
-        this.categoryArr.push(e)
+        this.categoryArr.push(e);
       }
-    }
+    },
   },
 
   computed: {
     ...mapGetters({
       loading: "data/getLoadingHome",
-      allPets: "data/getAllPets"
+      allPets: "data/getAllPets",
     }),
 
     sortedPets() {
       if (this.categoryArr.length == 0) {
-        return Object.entries(this.allPets)
+        return Object.entries(this.allPets);
       } else {
-        return Object.entries(this.allPets).filter(pet => this.categoryArr.includes(pet[1].groupID))
+        return Object.entries(this.allPets).filter((pet) =>
+          this.categoryArr.includes(pet[1].groupID)
+        );
       }
-    }
+    },
   },
 };
 </script>

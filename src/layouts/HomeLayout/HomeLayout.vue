@@ -2,9 +2,13 @@
   <MediaMenu v-if="mediaMenu"/>
 
   <SideBar class="side-bar"/>
-  <section class="general-wrapper">
+  <section 
+    :class="['general-wrapper', {
+      'general-wrapper--white': whiteTheme
+    }]"
+  >
     <HeaderBlock />
-    <slot />
+      <slot />
   </section>
 </template>
 
@@ -26,7 +30,8 @@ export default {
 
     computed: {
     ...mapGetters({
-      mediaMenu: "data/getMediaMenu"
+      mediaMenu: "data/getMediaMenu",
+      whiteTheme: "data/getWhiteTheme"
     }),
   },
 }

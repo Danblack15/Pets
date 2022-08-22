@@ -38,3 +38,7 @@
 .menu-list__item--profile{
     background: linear-gradient(225deg, #67E9F1 0%, #24E795 100%);
 }
+
+.menu-list--white .menu-list__list a{
+    color: #0F172A;
+}

@@ -1,0 +1,261 @@
+.account-tab {
+  box-sizing: border-box;
+  width: 710px;
+  height: 680px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  color: #FFFFFF;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.5s;
+}
+.account-tab__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.account-tab--white {
+  background: #FFFFFF;
+}
+.account-tab--white .account-tab__title {
+  color: #17171B;
+  transition: color 0.5s;
+}
+.account-tab--white .general-info__input {
+  color: #17171B;
+  border-bottom: 1px solid #17171b24;
+  transition: 0.5s;
+}
+.account-tab--white .general-info__label {
+  color: #17171B;
+  transition: 0.5s;
+}
+
+.form-account {
+  overflow: hidden;
+}
+.form-account__file {
+  display: none;
+}
+.form-account__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 34px;
+}
+.form-account__img {
+  width: 72px;
+  height: 72px;
+  background: #4C6FFF;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  cursor: pointer;
+  transition: 0.2s background;
+  position: relative;
+  z-index: 2;
+}
+.form-account__img--active {
+  animation-name: perImg;
+  animation-duration: 2.8s;
+  animation-fill-mode: forwards;
+  transform: scale(1) translate(0, 0);
+}
+.form-account__img:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+.form-account__img-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.form-account__btn {
+  padding: 11.5px 75.5px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+@keyframes perImg {
+  40% {
+    width: 200px;
+    height: 200px;
+  }
+  70% {
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    width: 72px;
+    height: 72px;
+  }
+}
+.general-info {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-row-gap: 28px;
+}
+.general-info fieldset {
+  border: none;
+  position: relative;
+  width: 305px;
+}
+.general-info__input {
+  width: 100%;
+  padding: 8px;
+  background: none;
+  outline: none;
+  color: #D5D5DC;
+  border-bottom: 1px solid #EDF2F7;
+  font-weight: 400;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.general-info__input:focus + .general-info__label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 10px;
+  transition: 0.2s;
+}
+.general-info__label {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #D5D5DC;
+  cursor: text;
+  transition: 0.2s;
+  transition: 0.5s;
+}
+
+.safety-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.safety-info fieldset {
+  border: none;
+  position: relative;
+  width: 305px;
+}
+.safety-info__input {
+  width: 100%;
+  padding: 8px;
+  background: none;
+  outline: none;
+  color: #D5D5DC;
+  border-bottom: 1px solid #EDF2F7;
+  font-weight: 400;
+  font-size: 14px;
+}
+.safety-info__input:focus + .safety-info__label {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 10px;
+  transition: 0.2s;
+}
+.safety-info__label {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #D5D5DC;
+  cursor: text;
+  transition: 0.2s;
+}
+
+.label--valid {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 10px;
+  transition: 0.2s;
+}
+
+.form-hint {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 8px;
+  color: #F16063;
+}
+
+.form--error .form-hint {
+  display: block;
+}
+
+.form-item--error .general-info__input {
+  color: #F16063;
+  border-bottom: 1px solid #F16063;
+}
+.form-item--error .general-info__label {
+  color: #F16063;
+}
+
+.form-item--success .general-info__input {
+  color: #66CB9F;
+  border-bottom: 1px solid #66CB9F;
+}
+.form-item--success .general-info__label {
+  color: #66CB9F;
+}
+
+@media (max-width: 1280px) {
+  .account-tab {
+    width: 670px;
+    height: 555px;
+    padding: 20px;
+  }
+
+  .general-info fieldset {
+    width: 295px;
+  }
+
+  .safety-info fieldset {
+    width: 295px;
+  }
+}
+@media (max-width: 780px) {
+  .account-tab {
+    width: 100%;
+  }
+}
+@media (max-width: 710px) {
+  .account-tab {
+    height: auto;
+  }
+
+  .form-account {
+    flex-direction: column;
+  }
+  .form-account__btn {
+    width: 100%;
+  }
+
+  .general-info {
+    flex-direction: column;
+    grid-row-gap: 40px;
+  }
+  .general-info fieldset {
+    width: 100%;
+  }
+
+  .safety-info {
+    flex-direction: column;
+    grid-row-gap: 40px;
+  }
+  .safety-info fieldset {
+    width: 100%;
+  }
+}

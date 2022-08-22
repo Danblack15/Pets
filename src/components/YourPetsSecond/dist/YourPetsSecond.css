@@ -1,0 +1,232 @@
+.pets-second {
+  color: #FFFFFF;
+}
+.pets-second__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  transition: color 0.5s;
+}
+.pets-second__subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  margin-top: 5px;
+  transition: color 0.5s;
+}
+.pets-second__images {
+  margin-top: 50px;
+  position: relative;
+  height: 85%;
+}
+.pets-second__submit {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font-size: 14px !important;
+  padding: 11.5px 108px !important;
+}
+.pets-second__input {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  max-height: 300px;
+  z-index: 2;
+  cursor: pointer;
+}
+.pets-second__input:hover + .pets-second__label {
+  border: 1px dashed #4C6FFF;
+  transition: 0.2s;
+}
+.pets-second__label {
+  width: 100%;
+  max-height: 300px;
+  border: 1px dashed #EDF2F7;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  animation-name: img-label;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.pets-second__label--drag {
+  border: 1px dashed #4C6FFF;
+}
+@keyframes img-label {
+  100% {
+    opacity: 1;
+  }
+}
+.pets-second__label-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.005em;
+  transition: 0.5s;
+}
+.pets-second__wrapper-images {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 10px;
+  grid-row-gap: 12.5px;
+}
+.pets-second__selected-img {
+  width: 120px;
+  height: 90px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  animation-name: selected-img;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+.pets-second__selected-img:hover .pets-second__delete-img {
+  opacity: 1;
+}
+.pets-second__selected-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pets-second__label-more {
+  width: 120px;
+  height: 90px;
+  border: 1px dashed #EDF2F7;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  animation-name: selected-img;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+.pets-second__label-more:hover {
+  border: 1px dashed #4C6FFF;
+  color: #4C6FFF;
+  transition: 0.3s;
+}
+.pets-second__delete-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.pets-second__delete-img img {
+  width: 10%;
+  height: 15%;
+}
+.pets-second--white .pets-second__title {
+  color: #334155;
+}
+.pets-second--white .pets-second__subtitle {
+  color: #334155;
+}
+.pets-second--white .pets-second__label {
+  border: 1px dashed #4c70ff86;
+  transition: 0.5s;
+}
+.pets-second--white .pets-second__label:hover {
+  border: 1px dashed #4C6FFF;
+}
+.pets-second--white .pets-second__label-more {
+  border: 1px dashed #4c70ff86;
+  color: #4c70ff86;
+  transition: 0.5s;
+}
+.pets-second--white .pets-second__label-more:hover {
+  border: 1px dashed #4C6FFF;
+  color: #4C6FFF;
+}
+.pets-second--white .pets-second__label-title {
+  color: #334155;
+}
+
+@keyframes selected-img {
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1280px) {
+  .pets-second__label {
+    max-height: 250px;
+  }
+  .pets-second__submit {
+    bottom: 40px;
+  }
+}
+@media (max-width: 760px) {
+  .pets-second__selected-img {
+    width: 110px;
+    height: 80px;
+  }
+  .pets-second__label-more {
+    width: 110px;
+    height: 80px;
+  }
+}
+@media (max-width: 650px) {
+  .pets-second__selected-img {
+    max-width: 23%;
+  }
+  .pets-second__label-more {
+    max-width: 23%;
+  }
+}
+@media (max-width: 600px) {
+  .pets-second__submit {
+    bottom: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .pets-second__selected-img {
+    max-width: 21%;
+    height: 60px;
+  }
+  .pets-second__label-more {
+    max-width: 21%;
+    height: 60px;
+  }
+}
+@media (max-width: 494px) {
+  .pets-second__submit {
+    bottom: 45px;
+  }
+}
+@media (max-width: 396px) {
+  .pets-second__submit {
+    bottom: 60px;
+  }
+  .pets-second__selected-img {
+    max-width: 22%;
+    height: 50px;
+  }
+  .pets-second__label-more {
+    max-width: 22%;
+    height: 50px;
+  }
+}

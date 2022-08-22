@@ -1,0 +1,38 @@
+.profile-tab {
+    width: 410px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    color: #EDF2F7;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: #4C6FFF;
+        transition: 0.2s;
+    }
+
+    &--white {
+        background: #FFFFFF;
+        color: #17171B;
+    }
+
+    & h4 {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .profile-tab {
+        width: 325px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .profile-tab {
+        min-width: 250px;
+    }
+}

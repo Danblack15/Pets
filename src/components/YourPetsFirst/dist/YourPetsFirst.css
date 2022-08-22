@@ -1,0 +1,233 @@
+.pets-frist {
+  margin-top: 50px;
+  height: 100%;
+}
+.pets-frist__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #EDF2F7;
+  transition: 0.5s;
+}
+.pets-frist__general {
+  display: flex;
+}
+.pets-frist__form {
+  margin-top: 58px;
+}
+.pets-frist fieldset {
+  border: none;
+}
+.pets-frist__input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D5D5DC;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-bottom: 1px solid #EDF2F7;
+  transition: 0.5s;
+}
+.pets-frist__input:focus + .pets-frist__label {
+  bottom: 29px;
+  font-size: 10px;
+  transition: 0.2s;
+}
+.pets-frist__label {
+  position: absolute;
+  pointer-events: none;
+  left: 8px;
+  bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D5D5DC;
+  transition: 0.5s;
+}
+.pets-frist__label--valid {
+  bottom: 29px;
+  font-size: 10px;
+}
+.pets-frist__general-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.pets-frist__general-wrapper--error .pets-frist__input {
+  color: #F16063 !important;
+  border-bottom: 1px solid #F16063;
+}
+.pets-frist__general-wrapper--error .pets-frist__label {
+  color: #F16063 !important;
+}
+.pets-frist__general-wrapper--success .pets-frist__input {
+  color: #66CB9F !important;
+  border-bottom: 1px solid #66CB9F;
+}
+.pets-frist__general-wrapper--success .pets-frist__label {
+  color: #66CB9F !important;
+}
+.pets-frist__sex {
+  margin-left: 40px;
+  width: 80px;
+  height: 37px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+.pets-frist__sex-input {
+  display: none;
+}
+.pets-frist__sex-input--woman:checked ~ .pets-frist__sex-circle {
+  left: calc(50% - 5px);
+}
+.pets-frist__sex-label {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.pets-frist__sex-circle {
+  background: #4C6FFF;
+  border-radius: 16px;
+  position: absolute;
+  width: 50%;
+  height: 27px;
+  left: 5px;
+  transition: left 0.2s;
+}
+.pets-frist__desk {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.pets-frist__desk .pets-frist__label--valid {
+  top: -15px;
+}
+.pets-frist__input-textarea {
+  font-family: "Rubik";
+  resize: none;
+}
+.pets-frist__input-textarea:focus ~ .pets-frist__label-textarea {
+  top: -15px;
+}
+.pets-frist__label-textarea {
+  top: 15px;
+}
+.pets-frist__purpose {
+  margin-top: 40px;
+  padding: 10px;
+}
+.pets-frist__purpose-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+.pets-frist__purpose-btns {
+  display: flex;
+  grid-column-gap: 30px;
+  margin-top: 5px;
+}
+.pets-frist__purpose-input {
+  display: none;
+}
+.pets-frist__purpose-input:checked + .pets-frist__purpose-label .pets-frist__purpose-circle span {
+  background: #4C6FFF;
+}
+.pets-frist__purpose-label {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.pets-frist__purpose-label:hover {
+  opacity: 0.8;
+}
+.pets-frist__purpose-circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #334155;
+  background: #EDF2F7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pets-frist__purpose-circle span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #EDF2F7;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.pets-frist__submit {
+  font-size: 14px !important;
+  padding: 11.5px 108px !important;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.pets-frist--white .pets-frist__title {
+  color: #334155;
+  transition: 0.5s;
+}
+.pets-frist--white .pets-frist__input {
+  color: #334155;
+  transition: 0.5s;
+}
+.pets-frist--white .pets-frist__label {
+  color: #334155;
+  transition: 0.5s;
+}
+.pets-frist--white .pets-frist__purpose-title {
+  color: #334155;
+  transition: 0.5s;
+}
+.pets-frist--white .pets-frist__purpose-label {
+  color: #334155;
+  transition: 0.5s;
+}
+
+.form-hint {
+  position: absolute;
+  color: #F16063;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  right: 0;
+  bottom: -15px;
+}
+
+@media (max-width: 600px) {
+  .pets-frist__purpose-btns {
+    flex-direction: column;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+  }
+  .pets-frist__submit {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+  }
+}

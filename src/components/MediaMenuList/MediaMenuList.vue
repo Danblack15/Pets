@@ -1,5 +1,7 @@
 <template>
-  <nav class="menu-list">
+  <nav :class="['menu-list', {
+    'menu-list--white': whiteTheme
+  }]">
     <ul class="menu-list__list">
       <li>
         <router-link to="/home">
@@ -38,7 +40,7 @@
       </li>
 
       <li>
-        <router-link to="/person">
+        <router-link to="/profile">
           <MenuHome menuItem class="menu-list__item menu-list__item--profile">
             <img src="@/assets/img/personicon.svg" alt="person" />
           </MenuHome>
@@ -50,7 +52,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    whiteTheme: {
+      type: Boolean,
+      default: false
+    }
+  }
+};
 </script>
 
 <style src="./MediaMenuList.css" scoped>

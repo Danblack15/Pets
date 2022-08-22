@@ -55,6 +55,16 @@
         opacity: 1;
     }
 }
+.not-found::-webkit-scrollbar{
+    width: 0;
+}
+
+.not-found--white .not-found__title {
+    color: #1C3177;
+}
+.not-found--white .not-found__text{
+    color: rgba(40, 68, 149, 0.69);
+}
 
 @media (max-width: 900px) {
     .not-found{

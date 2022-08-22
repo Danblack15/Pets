@@ -18,6 +18,10 @@ import FormUI from '@/components/ui/FormUI/FormUI'
 import StatisticUI from '@/components/ui/StatisticUI/StatisticUI'
 import StatisticLineUI from '@/components/ui/StatisticLineUI/StatisticLineUI'
 import InputUI from '@/components/ui/InputUI/InputUI'
+import ProfileTabUI from '@/components/ui/ProfileTabUI/ProfileTabUI'
+import CheckBoxUI from '@/components/ui/CheckBoxUI/CheckBoxUI'
+import ChatCard from '@/components/ui/ChatCard/ChatCard'
+import NewsItemUI from '@/components/ui/NewsItemUI/NewsItemUI'
 
 export default [
     ButtonUI,
@@ -39,5 +43,9 @@ export default [
     FormUI,
     StatisticUI,
     StatisticLineUI,
-    InputUI
+    InputUI,
+    ProfileTabUI,
+    CheckBoxUI,
+    ChatCard,
+    NewsItemUI
 ]

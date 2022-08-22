@@ -1,19 +1,33 @@
 <template>
-  <header class="header">
-      <h2 class="header__title">{{ pageName }}</h2>
+  <header :class="['header', {
+    'header--white': whiteTheme
+  }]">
+      <h2 class="header__title">
+        <img 
+          v-if="$route.matched[1]"
+          src="@/assets/img/arrowBig.svg" 
+          alt="back" 
+          class="header__general__back"
+          @click="$router.push('/pets')"
+        />
+        {{ pageName }}
+      </h2>
       <MenuHome class="header__media-open" @click="openMediaMenu">
         <img src="@/assets/img/openmenu.svg" alt="openMenu">
       </MenuHome>
       <div class="header__actions">
         <ThemeUI class="header__theme"/>
-        <NotificationUI class="header__notification"/>
-        <AvatarUI class="header__avatar"/>
+        <NotificationUI class="header__notification" active :whiteTheme="whiteTheme"/>
+        <AvatarUI 
+          class="header__avatar"
+          @click="$router.push('/profile')"
+        />
       </div>
   </header>
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   methods: {
@@ -23,10 +37,15 @@ export default {
   },
 
   computed: {
+    ...mapGetters({
+      whiteTheme: "data/getWhiteTheme"
+    }),
+
     pageName() {
-      let title = this.$route.meta.title || ''
+      if (this.$route.matched[1])
+        return `Питомцы\\${this.$route.params.category}`
       
-      return title
+      return this.$route.meta.title || ''
     }
   }
 }

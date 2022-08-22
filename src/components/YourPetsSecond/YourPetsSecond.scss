@@ -1,0 +1,295 @@
+.pets-second {
+	color: #FFFFFF;
+
+	&__title {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+		transition: color 0.5s;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;
+		margin-top: 5px;
+		transition: color 0.5s;
+	}
+
+	&__images {
+		margin-top: 50px;
+		position: relative;
+		height: 85%;
+	}
+
+	&__submit {
+		position: absolute;
+		bottom: 30px;
+		right: 0;
+		font-size: 14px !important;
+		padding: 11.5px 108px !important;
+	}
+
+	&__input {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		max-height: 300px;
+		z-index: 2;
+		cursor: pointer;
+
+		&:hover+ {
+			.pets-second__label {
+				border: 1px dashed #4C6FFF;
+				transition: 0.2s;
+			}
+		}
+	}
+
+	&__label {
+		width: 100%;
+		max-height: 300px;
+		border: 1px dashed #EDF2F7;
+		border-radius: 6px;
+		display: block;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.5s;
+
+		animation-name: img-label;
+		animation-duration: 0.4s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+
+		&--drag {
+			border: 1px dashed #4C6FFF;
+		}
+
+		@keyframes img-label {
+			100% {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__label-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		letter-spacing: -0.005em;
+		transition: 0.5s;
+	}
+
+	&__wrapper-images {
+		display: flex;
+		flex-wrap: wrap;
+		grid-column-gap: 10px;
+		grid-row-gap: 12.5px;
+	}
+
+	&__selected-img {
+		width: 120px;
+		height: 90px;
+		border-radius: 6px;
+		overflow: hidden;
+		position: relative;
+
+		animation-name: selected-img;
+		animation-duration: 0.4s;
+		animation-fill-mode: forwards;
+		transform: scale(0);
+
+		&:hover {
+			.pets-second__delete-img {
+				opacity: 1;
+			}
+		}
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__label-more {
+		width: 120px;
+		height: 90px;
+		border: 1px dashed #EDF2F7;
+		border-radius: 6px;
+		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.5s;
+
+		animation-name: selected-img;
+		animation-duration: 0.4s;
+		animation-fill-mode: forwards;
+		transform: scale(0);
+
+		&:hover {
+			border: 1px dashed #4C6FFF;
+			color: #4C6FFF;
+			transition: 0.3s;
+		}
+	}
+
+	&__delete-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.534);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		opacity: 0;
+		transition: opacity 0.3s;
+
+		& img {
+			width: 10%;
+			height: 15%;
+		}
+	}
+
+	&--white {
+		.pets-second {
+			&__title {
+				color: #334155;
+			}
+
+			&__subtitle {
+				color: #334155;
+			}
+
+			&__label  {
+				border: 1px dashed #4c70ff86;
+				transition: 0.5s;
+
+				&:hover {
+					border: 1px dashed #4C6FFF;
+				}
+			}
+
+			&__label-more {
+				border: 1px dashed #4c70ff86;
+				color: #4c70ff86;
+				transition: 0.5s;
+
+				&:hover {
+					border: 1px dashed #4C6FFF;
+					color: #4C6FFF;
+				}
+			}
+
+			&__label-title {
+				color: #334155;
+			}
+		}
+	}
+}
+
+@keyframes selected-img {
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 1280px) {
+	.pets-second {
+		&__label {
+			max-height: 250px;
+		}
+
+		&__submit {
+			bottom: 40px;
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.pets-second {
+		&__selected-img {
+			width: 110px;
+			height: 80px;
+		}
+
+		&__label-more {
+			width: 110px;
+			height: 80px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.pets-second {
+		&__selected-img {
+			max-width: 23%;
+		}
+
+		&__label-more {
+			max-width: 23%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.pets-second {
+		&__submit {
+			bottom: 20px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.pets-second {
+		&__selected-img {
+			max-width: 21%;
+			height: 60px;
+		}
+
+		&__label-more {
+			max-width: 21%;
+			height: 60px;
+		}
+	}
+}
+
+@media (max-width: 494px) {
+	.pets-second {
+		&__submit {
+			bottom: 45px;
+		}
+	}
+}
+
+@media (max-width: 396px) {
+	.pets-second {
+		&__submit {
+			bottom: 60px;
+		}
+
+		&__selected-img {
+			max-width: 22%;
+			height: 50px;
+		}
+
+		&__label-more {
+			max-width: 22%;
+			height: 50px;
+		}
+	}
+}

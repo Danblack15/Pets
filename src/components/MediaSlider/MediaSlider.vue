@@ -16,7 +16,7 @@
 import SwiperCore, {Navigation, Parallax} from "swiper"
 import { Swiper, SwiperSlide } from "swiper/vue"
 
-import 'swiper/css';
+import "swiper/swiper.min.css";
 
 SwiperCore.use([Navigation, Parallax])
 

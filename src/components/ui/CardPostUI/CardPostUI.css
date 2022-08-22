@@ -8,6 +8,7 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;    
     position: relative;
+    transition: background 0.5s;
 }
 .card-post__info{
     display: flex;
@@ -33,6 +34,7 @@
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: color 0.5s;
 }
 .card-post__status{
     color: #96A7AF;
@@ -54,6 +56,15 @@
     margin-top: 15px;
     width: 100%;
     color: #FFFFFF;
+    transition: color 0.5s;
+}
+
+.card-post--white {
+    background: #FFFFFF;
+}
+.card-post--white .card-post__name,
+.card-post--white .card-post__text {
+    color: #0F172A;
 }
 
 @media (max-width: 1620px) {

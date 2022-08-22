@@ -1,0 +1,37 @@
+.pet-slider{
+    position: relative;
+}
+.pet-slider__slider__line{
+    display: flex;
+    min-width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.pet-slider__item{
+    max-width: 100%;
+    transition: 0.5s ease;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+}
+.pet-slider__item img{
+    max-width: 606px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 1s;
+}
+.swiper-slide-prev{
+    transform: scale(0.8);
+}
+.swiper-slide-next{
+    transform: scale(0.8);
+    z-index: -1;
+
+}
+.swiper-slide-active {
+    transition: 0.5s;
+    z-index: 2;
+}

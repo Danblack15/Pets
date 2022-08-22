@@ -2,7 +2,13 @@
   <section
     class="card-pets"
     v-if="groupPets.length"
-    :class="{ 'card-pets--masonry': masonry }"
+    :class="{ 
+      'card-pets--masonry': masonry,
+      'card-pets--white': whiteTheme
+    }"
+    @click="$router.push({
+      path: `/pets/${this.pet.name}`,
+    })"
   >
     <div class="card-pets__img">
       <img :src="pet.previewImg" alt="pet" />
@@ -12,7 +18,7 @@
         <h3 class="card-pets__info-name">{{ pet.name }}</h3>
         <p class="card-pets__info-category">{{ selectGroup }}</p>
       </div>
-      <div class="card-pets__info__likes">
+      <div class="card-pets__info__likes" @click.stop="likePet">
         <p class="card-pets__likes">{{ petLikes }} лайка</p>
 
         <svg
@@ -22,7 +28,6 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           :class="['card-pets__info__like', { 'card-pets__info__like--liked': liked }]"
-					@click="likePet"
         >
           <path
             d="M8.99609 15.5C8.99609 15.5 16.9961 9.93631 16.9961 4.66032C16.9961 -0.615631 9.89511 -1.01304 8.99609 4.26976C8.09704 -1.01304 0.996094 -0.60878 0.996094 5.07143C0.996094 10.7517 8.99609 15.5 8.99609 15.5Z"
@@ -106,12 +111,13 @@ export default {
 			} else {
 				this.petLikes--
 			}
-		}
+		},
 	},
 
   computed: {
     ...mapGetters({
       groupPets: "data/getGroupPets",
+      whiteTheme: "data/getWhiteTheme"
     }),
 
     selectGroup() {

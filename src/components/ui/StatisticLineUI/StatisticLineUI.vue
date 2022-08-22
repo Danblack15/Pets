@@ -1,5 +1,7 @@
 <template>
-  <div class="chart-item">
+  <div :class="['chart-item', {
+    'chart-item--white': whiteTheme
+  }]">
     <div class="chart-item__line">
       <span class="chart-item__likes" :style="{'height': likesLine + '%'}"></span>
       <span class="chart-item__views" :style="{'height': viewsLine + '%'}"></span>
@@ -21,6 +23,10 @@ export default {
     },
     day: {
       type: Number
+    },
+    whiteTheme: {
+      type: Boolean,
+      default: false
     }
   },
 

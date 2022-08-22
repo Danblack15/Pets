@@ -1,38 +1,40 @@
 <template>
-  <div class="theme" id="theme">
-    <label for="blackTheme" class="theme__label theme__black active" @click.stop>
-      <input class="theme-input" type="radio" name="theme" id="blackTheme" @click="theme"/>
-      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" @click.stop/>
+  <div :class="['theme', {
+    'theme--white': whiteTheme
+  }]">
+    <input type="checkbox" id="theme" class="theme__input"/>
+    <label for="theme" class="theme__label theme__white" @click="changeTheme">
+      <img src="@/assets/img/moonWhite.svg" alt="blackTheme" />
+      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" />
     </label>
-    <label for="whiteTheme" class="theme__label theme__white" @click.stop>
-      <input class="theme-input" type="radio" name="theme" id="whiteTheme" @click="theme"/>
-      <img src="@/assets/img/sunWhite.svg" alt="whiteTheme" @click.stop/>
-    </label>
+    <div class="theme__circle"></div>
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
   name: "ThemeUI",
 
   methods: {
-    theme(e) {
-      let elem = e.target.parentNode
-      
-      document.getElementsByClassName('theme__black')[0].classList.remove('active')
-      document.getElementsByClassName('theme__white')[0].classList.remove('active')
-      
-      elem.classList.add('active')
+    ...mapActions({
+      changeWhiteTheme: "data/changeWhiteTheme"
+    }),
 
-      let theme = elem.getAttribute('for')
+    changeTheme() {
+      let theme = localStorage.getItem('theme-black')
+      localStorage.setItem('theme-black', theme !== 'true')
 
-      //Вместо изменения классов будет обращение к VUEX для изменения темы
-      if (theme == 'whiteTheme') {
-        document.getElementById('theme').classList.add('whiteTheme')
-      } else {
-        document.getElementById('theme').classList.remove('whiteTheme')
-      }
+      this.changeWhiteTheme()
     }
+  },
+  
+
+  computed: {
+    ...mapGetters({
+      whiteTheme: "data/getWhiteTheme"
+    })
   }
 };
 </script>

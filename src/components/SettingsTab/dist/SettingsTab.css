@@ -1,0 +1,49 @@
+.settings-tab {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 410px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  color: #FFFFFF;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.settings-tab__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.settings-tab__account-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+.settings-tab__account-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.settings-tab__account-item:last-child {
+  margin-bottom: 0;
+}
+.settings-tab--white {
+  background: #FFFFFF;
+  color: #334155;
+  transition: 0.5s;
+}
+
+@media (max-width: 1400px) {
+  .settings-tab {
+    width: 440px;
+    height: 320px;
+    padding: 20px;
+  }
+}
+@media (max-width: 1220px) {
+  .settings-tab {
+    width: 100%;
+  }
+}

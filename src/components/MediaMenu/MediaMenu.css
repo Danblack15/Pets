@@ -17,6 +17,9 @@
     animation-fill-mode: forwards;
     transform: translateX(-100%);
 }
+.menu--white {
+    background: #EDF2F7;
+}
 @keyframes menuopen {
     100%{
         transform: translateX(0);

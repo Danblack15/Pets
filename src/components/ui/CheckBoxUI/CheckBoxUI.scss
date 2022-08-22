@@ -1,0 +1,52 @@
+.checkBox {
+	&-input {
+		display: none;
+
+		&:checked+label .checkBox__label-oval {
+			background: #4C6FFF;
+			transition: 0.2s ease;
+		}
+
+		&:checked+label .checkBox__label-circle {
+			left: 20px;
+			transition: 0.2s ease;
+		}
+	}
+
+	&__label {
+		display: flex;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&-title {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			margin-left: 10px;
+		}
+
+		&-oval {
+			width: 36px;
+			height: 18.5px;
+			background: #334155;
+			border-radius: 97.7397px;
+			position: relative;
+			transition: 0.2s ease;
+		}
+
+		&-circle {
+			width: 13.5px;
+			height: 13.5px;
+			background: #EDF2F7;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 2.5px;
+			transition: 0.2s ease;
+		}
+	}
+}

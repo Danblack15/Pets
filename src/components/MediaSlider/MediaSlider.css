@@ -6,6 +6,7 @@
 .slider__item{
     width: auto;
     transition: 0.2s;
+    cursor: grab;
 }
 .swiper-slide-prev{
     transform: scale(0.92);

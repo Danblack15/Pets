@@ -1,0 +1,12 @@
+.news-list {
+  margin-top: 18px;
+}
+.news-list__item {
+  margin-bottom: 40px;
+}
+.news-list__item:nth-child(odd) {
+  width: 710px;
+}
+.news-list__item:nth-child(even) {
+  width: 410px;
+}

@@ -4,6 +4,8 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     padding: 0;
+    cursor: pointer;
+    transition: background 0.5s;
 }
 .card-pets__img{
     overflow: hidden;
@@ -28,6 +30,7 @@
     color: #EDF2F7;
     font-weight: 400;
     font-size: 24px;
+    transition: color 0.5s;
 }
 .card-pets__info-category{
     font-weight: 400;
@@ -50,6 +53,7 @@
     font-weight: 400;
     font-size: 15px;
     margin-right: 15px;
+    transition: color 0.5s;
 }
 .card-pets--masonry .card-pets__img{
     height: auto;
@@ -62,6 +66,14 @@
 }
 .card-pets__info__like--liked{
     fill: #F16063;
+}
+
+.card-pets--white {
+    background: #FFFFFF;
+}
+.card-pets--white .card-pets__info-name,
+.card-pets--white .card-pets__likes {
+    color: #0F172A;
 }
 @media (max-width: 1620px) {
     .card-pets{

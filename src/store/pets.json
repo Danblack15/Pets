@@ -1,0 +1,232 @@
+    {
+        "1": {
+            "name": "Bob",
+            "age": "2022-03-01",
+            "about": "Любит спать, кушать и вставать в всратые позы",
+            "groupID": 1,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 323,
+            "location": "Россия",
+            "sex": true,
+            "type": "Британский вислоухий",
+            "weight": "2",
+            "adopt": true
+        },
+        "2": {
+            "name": "Loki",
+            "age": "2021-07-17",
+            "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, voluptate provident ut nostrum quis modi.",
+            "groupID": 2,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 5,
+            "location": "Германия",
+            "sex": true,
+            "type": "Швейцарская овчарка",
+            "weight": "7",
+            "adopt": false
+        },
+        "3": {
+            "name": "Jack",
+            "age": "2021-07-17",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At vero illo consectetur non laboriosam, natus alias voluptas saepe illum, ipsam repellendus error voluptates amet magnam!",
+            "groupID": 3,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 61,
+            "location": "Англия",
+            "sex": false,
+            "type": "Попугай",
+            "weight": "1",
+            "adopt": false
+        },
+        "4": {
+            "name": "Rex",
+            "age": "2020-03-01",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate possimus deserunt reiciendis voluptas ea quos, itaque inventore nulla praesentium voluptates doloremque velit eius sit quidem excepturi! Optio, fugiat nisi molestiae animi error ad aperiam perspiciatis reiciendis esse, ipsa ullam aliquid aspernatur eligendi expedita! Tenetur eveniet quo ad placeat odit.",
+            "groupID": 4,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 163,
+            "location": "Россия",
+            "sex": true,
+            "type": "Кроль",
+            "weight": "3",
+            "adopt": false
+        },
+        "5": {
+            "name": "Arkadiy",
+            "age": "2021-07-17",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, id?",
+            "groupID": 5,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 5,
+            "location": "Британия",
+            "sex": false,
+            "type": "Мыша",
+            "weight": "7",
+            "adopt": true,
+            "price": 5000
+        },
+        "6": {
+            "name": "Boris",
+            "age": "2021-07-17",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, id?",
+            "groupID": 6,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 11,
+            "location": "США",
+            "sex": true,
+            "type": "Хомяк",
+            "weight": "1",
+            "adopt": true,
+            "price": 2000
+        },
+        "7": {
+            "name": "Smudge",
+            "age": "2022-03-01",
+            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, id?",
+            "groupID": 1,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 323,
+            "location": "Россия",
+            "sex": true,
+            "type": "Британский вислоухий",
+            "weight": "2",
+            "adopt": true,
+            "price": 15000
+        },
+        "8": {
+            "name": "Shlepa",
+            "age": "2021-07-17",
+            "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nulla quisquam minima suscipit quis, quod numquam iusto enim optio distinctio.",
+            "groupID": 2,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 5,
+            "location": "Германия",
+            "sex": true,
+            "type": "Швейцарская овчарка",
+            "weight": "7",
+            "adopt": false
+        },
+        "9": {
+            "name": "Boba",
+            "age": "2021-07-17",
+            "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nulla quisquam minima suscipit quis, quod numquam iusto enim optio distinctio.",
+            "groupID": 3,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 61,
+            "location": "Англия",
+            "sex": false,
+            "type": "Попугай",
+            "weight": "1",
+            "adopt": true
+        },
+        "10": {
+            "name": "Biba",
+            "age": "2020-03-01",
+            "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nulla quisquam minima suscipit quis, quod numquam iusto enim optio distinctio.",
+            "groupID": 4,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 163,
+            "location": "Россия",
+            "sex": true,
+            "type": "Кроль",
+            "weight": "3",
+            "adopt": true
+        },
+        "11": {
+            "name": "Lupa",
+            "age": "2021-07-17",
+            "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nulla quisquam minima suscipit quis, quod numquam iusto enim optio distinctio.",
+            "groupID": 5,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 5,
+            "location": "Британия",
+            "sex": false,
+            "type": "Мыша",
+            "weight": "7",
+            "adopt": false
+        },
+        "12": {
+            "name": "Pupa",
+            "age": "2021-07-17",
+            "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nulla quisquam minima suscipit quis, quod numquam iusto enim optio distinctio.",
+            "groupID": 6,
+            "previewImg": "https://loremflickr.com/320/240",
+            "images": [
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240",
+                "https://loremflickr.com/320/240"
+            ],
+            "likes": 11,
+            "location": "США",
+            "sex": true,
+            "type": "Хомяк",
+            "weight": "1",
+            "adopt": false
+        }
+    }
